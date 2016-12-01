@@ -13,11 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+ .middle-banner-signup {
+		margin: 60px 120px;
+ }
  	.julep{
  		position: relative;
-		margin-left: 40px;
+		margin-left: 30px;
 		margin-top: 0px;
- 	}
+ }
 	
  	input.form-control{
  		padding-top: 0px;
@@ -66,7 +70,7 @@
 	.footer-text {
     	position: relative;
     	top: 8px;
-    	margin-left: -20px;
+    	margin-left: 30px;
     }
 
 
