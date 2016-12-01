@@ -13,8 +13,24 @@
  *= require_tree .
  *= require_self
  */
+ 	.julep{
+ 		position: relative;
+		margin-left: 40px;
+		margin-top: 0px;
+ 	}
 	
+ 	input.form-control{
+ 		padding-top: 0px;
+ 		padding-bottom: 0px;
+ 		padding-right: 60px;
+ 		padding-left: 10px;
+ 	}
+	
+	.form-search{
+		margin-top: 9px;
+		margin-left: 40px;
 
+	}
 
 	.instagram{
 		position: relative;
@@ -24,7 +40,7 @@
 
 	.btn-home{
 		padding: 5px;
-		background-color: #CECEF0;
+		background-color: #c0c0c0;
 		border-color: black;
 	}
  	.lower-banner{
@@ -88,7 +104,7 @@
     	color: white;
   		background-size: cover;
     	
-  		text-shadow: 1px 1px grey;
+  		/*text-shadow: 1px 1px grey;*/
 
     }
        
