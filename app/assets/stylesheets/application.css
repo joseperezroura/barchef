@@ -13,7 +13,12 @@
  *= require_tree .
  *= require_self
  */
-.img-thumbnail {
+.field{
+  margin: 10px 0px;
+}
+
+
+.sign-thumbnail {
 	background-color: #c0c0c0;
 	border: 2px solid #c0c0c0;
 }

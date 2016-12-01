@@ -2,7 +2,7 @@
 
 <div class="row middle-banner-signup">
 <div class="col-sm-6">
-  <img src="../assets/julep.jpg" class="img-thumbnail" class="julep" alt="Image"> 
+  <img src="../assets/julep.jpg" class="img-thumbnail sign-thumbnail" class="julep" alt="Image"> 
 </div>
 
 <div class="col-sm-6">
@@ -11,11 +11,11 @@
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= devise_error_messages! %>  
         <div class="field">
-          <%= f.label :first_name %><br />
+          <%= f.label :first_name %><br/>
           <%= f.text_field :first_name, autofocus: true %>
         </div>
         <div class="field">
-          <%= f.label :last_name %><br />
+          <%= f.label :last_name %><br/>
           <%= f.text_field :last_name %>
         </div>
         <div class="field">
@@ -33,7 +33,7 @@
           <%= f.label :password_confirmation %><br />
           <%= f.password_field :password_confirmation, autocomplete: "off" %>
         </div>
-        <div class="actions">
+        <div class="actions"><br>
           <%= f.submit "Sign up" %>
         </div>
         <% end %>
