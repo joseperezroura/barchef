@@ -24,6 +24,8 @@
 
 	.btn-home{
 		padding: 5px;
+		background-color: #CECEF0;
+		border-color: black;
 	}
  	.lower-banner{
  		margin-top: 40px;
@@ -36,7 +38,7 @@
 	.home-img-stuff{
 		position: relative;
       	margin-top: -50px;
-      	color: white;
+      	
 	}
 
     .chef-title {
@@ -94,6 +96,6 @@
       background-color: #f2f2f2;
       padding: 10px;
       position: relative;
-      margin-top: 70px;
+      margin-top: 55px;
     }
 
