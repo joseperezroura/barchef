@@ -13,9 +13,12 @@
  *= require_tree .
  *= require_self
  */
-
+.img-thumbnail {
+	background-color: #c0c0c0;
+	border: 2px solid #c0c0c0;
+}
  .middle-banner-signup {
-		margin: 60px 120px;
+		margin: 60px 180px;
  }
  	.julep{
  		position: relative;

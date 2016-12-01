@@ -1,8 +1,13 @@
-<div class="sign-up-form container-fluid">
+<div class = "container-fluid">
 
+<div class="row middle-banner-signup">
+<div class="col-sm-6">
+  <img src="../assets/julep.jpg" class="img-thumbnail" class="julep" alt="Image"> 
+</div>
+
+<div class="col-sm-6">
+<div class="sign-up-form text-center container-fluid">
 <h2>Log in</h2>
-
-  
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
     <%= f.label :first_name %><br />
@@ -34,7 +39,9 @@
       <%= f.submit "Log in" %>
     </div>
   <% end %>
-
-
 <%= render "devise/shared/links" %>
   </div>
+  </div>
+     </div>
+  </div>
+
