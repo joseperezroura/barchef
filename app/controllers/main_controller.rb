@@ -8,5 +8,11 @@ class MainController < ApplicationController
 		end
 	end
 
+	def user_profile
+
+			# @user = User.id
+		render :user_profile
+	end
+
 
 end

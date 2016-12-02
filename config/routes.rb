@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root "main#home"
 
-  
+  get "/user_profile", to: "main#user_profile"
 
  
 end
