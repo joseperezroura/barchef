@@ -1,3 +1,24 @@
-
-
-<h1>Hello <%= @user.first_name %>!</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="well">
+				<div class="well">
+					<ul>
+						<li><img src="../assets/john.png" class="img-thumbnail img-user-thumbnail" alt="Image"></li>
+							<li><h3><%= @user.first_name %> <%= @user.last_name %></h3></li>
+					</ul>
+				</div>
+				<ul>
+					<li><%= @user.location %></li>
+					<li><%= @user.bio %></li>
+					<li><%= @user.industry %></li>
+					<li><%= @user.company %></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-sm-9">
+			<div class="well">
+			</div>
+		</div>
+	</div>
+</div>
