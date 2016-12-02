@@ -13,10 +13,14 @@
  *= require_tree .
  *= require_self
  */
+.list-of-suggested-users{
+  padding-left: 0px;
+}
+
 
  .list-of-suggested-users li{
   display: inline-block; 
-  margin: 8px 8px;
+  width: 49%;
  }
 
 .sponsor-box{

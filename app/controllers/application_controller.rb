@@ -4,5 +4,6 @@ class ApplicationController < ActionController::Base
 
   	def setup_extra_devise_fields
   	devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :last_name])
+  	# devise_parameter_sanitizer.permit(:profile?????, keys: [:first_name, :last_name])
   end
 end
