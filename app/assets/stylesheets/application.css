@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+.col-profile-main{
+  padding: 0px;
+}
+
 .well-main-profile{
   height: 700px;
   background-color: #f2f2f2;
