@@ -14,12 +14,14 @@
  *= require_self
  */
 .sponsor-box{
+  
+  margin-top: 40px;
   border: 2px solid #c0c0c0;
 
 }
 
 .user-home-profile-info{
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .user-home-profile-links{
@@ -30,7 +32,8 @@
 }
 
 .img-main-home-user{
-
+    
+    
     display: inline-block;
     vertical-align: middle;
 
