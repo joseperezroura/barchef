@@ -1,4 +1,8 @@
 class MainController < ApplicationController
+	before_action :authenticate_user!, :except => [:home]
+
+
+
 	def home		
 		if user_signed_in?			
 			@user = User.first(6)
