@@ -13,10 +13,30 @@
  *= require_tree .
  *= require_self
  */
+.btn-default{
+  border-color: black;
+}
+.form-control{
+  border: 1px solid black; 
+}
+
+
+
+.navbar-inverse .navbar-brand {
+  color: black;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: black;
+}
+
+
 .list-of-suggested-users{
   padding-left: 0px;
 }
-
+.navbar{
+  background-color: #C3E0E2;
+}
 
  .list-of-suggested-users li{
   display: inline-block; 
@@ -213,5 +233,6 @@ ul {
       padding: 10px;
       position: relative;
       margin-top: 55px;
+      border: 1px solid black
     }
 
