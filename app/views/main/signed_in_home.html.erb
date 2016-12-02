@@ -8,7 +8,7 @@
 				<div class="user-home-profile-info text-center">
 				<img src="assets/jose.png" class="img-thumbnail img-user-thumbnail img-main-home-user" alt="Image">
 				<ul class="user-home-profile-links">
-				<li><a href="#">News</a></li>
+				<li><%= link_to "Profile", user_path(current_user) %></li>
 				<li><a href="#">Events</a></li>
 				<li><a href="#">Messages</a></li>
 				</ul>
@@ -32,7 +32,6 @@
 		  					</ul>
 		  				</div>
 					</div>
-
 			</div>
 		</div>
 		<div class="col-sm-3">	

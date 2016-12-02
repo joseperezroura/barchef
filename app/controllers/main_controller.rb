@@ -12,11 +12,20 @@ class MainController < ApplicationController
 		end
 	end
 
-	def user_profile
-
-			# @user = User.id
-		render :user_profile
-	end
-
 
 end
+
+
+
+
+
+
+
+
+
+
+	# def user_profile
+	# 	@the_user = User.find(params[:id])
+	# 		# @user = User.id
+	# 	render :user_profile
+	# end
