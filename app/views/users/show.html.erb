@@ -9,29 +9,26 @@
 					</ul>
 				</div>
 				<ul>
-					<li><%= @user.location %></li>
-					<li><%= @user.bio %></li>
-					<li><%= @user.industry %></li>
-					<li><%= @user.company %></li>
-					<li>Recipes</li>
+					<li>Location: <strong><%= @user.location %></strong></li>
+					<li>Bio: <strong><%= @user.bio %></strong></li>
+					<li>Industry: <strong><%= @user.industry %></strong></li>
+					<li>Company: <strong><%= @user.company %></strong></li>
+					<li>Recipes: </li>
 				</ul>
 			</div>
 		</div>
 		<div class="col-sm-9 col-profile-main">
 			<div class="well well-main-profile well-main-profile-2">
 				<div class="well well-inside">
-				<div class="cocktail-img-ingredients">
-				<img src="../assets/julep.jpg" class="img-thumbnail img-cocktail-thumbnail" alt="Image">
-				<ul>
+				<ul class="text-center recipe-ul">
 					<li><h4>Recipe Name: RED-HOT RITA</h4></li>
+					<li><img src="../assets/julep.jpg" class="img-thumbnail img-cocktail-thumbnail" alt="Image"></li>
 					<li>Ingredient 1: <strong>Watermelon Tequila</strong> Measurement: 2oz</li>
 					<li>Ingredient 2: <strong>Lime Juice</strong>  Measurement: .75oz</li>
 					<li>Ingredient 3: <strong>Agave</strong>  Measurement: .5oz</li>
 					<li>Ingredient 4: <strong>Sriracha</strong>  Measurement: Barspoon</li>
+					<li><span class="recipe-notes"><strong>Notes</strong>: Combine all ingredients in shaker.  Shake and strain into rocks glass over crushed ice. Garnish with watermelon chunk.</span></li>
 				</ul>
-				</div>
-				<br>
-				<span class="recipe-notes"><strong>Notes</strong>: Combine all ingredients in shaker.  Shake and strain into rocks glass over crushed ice. Garnish with watermelon chunk.</span>
 				</div>
 			</div>
 		</div>
