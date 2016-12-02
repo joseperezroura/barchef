@@ -25,22 +25,10 @@
 					<div class="row">
 		 				<div class="well well-inside well-inside-suggested-users">
 		  					<ul class="list-of-suggested-users">
+		  						<% @user.each do |one_user| %>
 		  						<li><img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-		  						<a href="#"> <span class="user-name"> Jose Perez-Roura</span></a></li>
-		  						<li><img src="assets/john.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-		  						<a href="#"> <span class="user-name"> Johnny Boy</span></a></li>
-		  						<li><img src="assets/jackdaniels_poster.jpg" class="img-thumbnail img-user-thumbnail" alt="Image">
-		  						<a href="#"> <span class="user-name"> Jack Daniels</span></a></li>
-		  						<li><img src="assets/jackdaniels_poster.jpg" class="img-thumbnail img-user-thumbnail" alt="Image">
-		  						<a href="#"> <span class="user-name"> Jack Daniels</span></a></li>
-		  						<li><img src="assets/jackdaniels_poster.jpg" class="img-thumbnail img-user-thumbnail" alt="Image">
-		  						<a href="#"> <span class="user-name"> Jack Daniels</span></a></li>
-		  						<li><img src="assets/john.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-		  						<a href="#"> <span class="user-name"> Johnny Boy</span></a></li>
-		  						<li><img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-		  						<a href="#"> <span class="user-name"> Jose Perez-Roura</span></a></li>
-		  						<li><img src="assets/john.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-		  						<a href="#"> <span class="user-name"> Johnny Boy</span></a></li>
+		  						<a href="#"> <span class="user-name"><%= one_user.first_name %> <%= one_user.last_name %></span></a></li>
+	  						<% end %>
 		  					</ul>
 		  				</div>
 					</div>
