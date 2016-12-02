@@ -3,15 +3,14 @@
   <head>
     <title>Barchef</title>
     <meta charset="utf-8">
-    <%= csrf_meta_tags %>
+  <%= csrf_meta_tags %>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!-- Latest compiled and minified CSS -->
-  	</head>
+  </head>
 <body>  
- <nav class="navbar menu_bar navbar-inverse">
+<nav class="navbar menu_bar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -25,7 +24,7 @@
       <ul class="nav navbar-nav">
         <li><a href="http://localhost:3000/">HOME</a></li>
         <li><a href="#">INBOX</a></li>
-        <li>      <form class="navbar-form navbar-right" role="search">
+        <li><form class="navbar-form navbar-right" role="search">
         <div class="form-group input-group">
           <input type="text" class="form-control" placeholder="Search..">
           <span class="input-group-btn">
@@ -35,9 +34,8 @@
           </span>        
         </div>
       </form><div class="input-group-btn">
-        <!-- <button type="button" class="btn btn-danger">Subscribe</button> --></li>
+      </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">ABOUT US</a></li>
         <li><a href="http://localhost:3000/users/sign_in"><span class="glyphicon glyphicon-user"></span> LOGIN</a></li>
@@ -45,24 +43,14 @@
     </div>
   </div>
 </nav>   
+ 
  <%= yield %>
 
 <br>
- <footer>
+<footer>
  	<div class="row">
-	
- 	<p class="footer-text">2016 IRONHACK
- 	</p>
-	
-	<!-- <div class="instagram">
-		 INSTAGRAM <span class="glyphicon glyphicon-camera"></span>
-	</div> -->
-	</div>
-
- 
- </footer>
- 
-
+ 	<p class="footer-text">2016 IRONHACK</p>
+	</div> 
+</footer>
 </body>
-
 </html>
