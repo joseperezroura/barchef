@@ -6,6 +6,7 @@
 					<ul>
 						<li><img src="../assets/john.png" class="img-thumbnail img-user-thumbnail" alt="Image"></li>
 							<li><h3><%= @user.first_name %> <%= @user.last_name %></h3></li>
+							<li><%= link_to "Make New Recipe", new_recipe_path %></li>
 					</ul>
 				</div>
 				<ul>
@@ -24,11 +25,9 @@
 					<% @recipes.each do |one_recipe| %>
 					<li><h4>Recipe Name: <%= one_recipe.name %></h4></li>
 					<!-- <li><img src="../assets/julep.jpg" class="img-thumbnail img-cocktail-thumbnail" alt="Image"></li> -->
-					<li>Ingredient 1: <strong>Watermelon Tequila</strong> Measurement: 2oz</li>
-					<li>Ingredient 2: <strong>Lime Juice</strong>  Measurement: .75oz</li>
-					<li>Ingredient 3: <strong>Agave</strong>  Measurement: .5oz</li>
-					<li>Ingredient 4: <strong>Sriracha</strong>  Measurement: Barspoon</li>
-					<li><span class="recipe-notes"><strong>Notes</strong>: Combine all ingredients in shaker.  Shake and strain into rocks glass over crushed ice. Garnish with watermelon chunk.</span></li>
+					<li>Ingredients Description: <%= one_recipe.description %></li>
+					<li>Recipe Instructions: <%= one_recipe.instructions %></li>
+					<!-- <li><span class="recipe-notes"><strong>Notes</strong>: Combine all ingredients in shaker.  Shake and strain into rocks glass over crushed ice. Garnish with watermelon chunk.</span></li> -->
 					<% end %>
 				</ul>
 				</div>
@@ -36,3 +35,16 @@
 		</div>
 	</div>
 </div>
+
+
+
+<!-- 
+					<li>Ingredient 2: <strong>Lime Juice</strong>  Measurement: .75oz</li>
+					<li>Ingredient 3: <strong>Agave</strong>  Measurement: .5oz</li>
+					<li>Ingredient 4: <strong>Sriracha</strong>  Measurement: Barspoon</li> -->
+
+
+
+
+
+
