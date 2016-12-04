@@ -1,1 +1,31 @@
+
+<div class="container">
+
+
 <h1>Make New Recipes</h1>
+
+<%= form_for [@user, @recipe] do |f| %>
+
+	<%= f.label :name %>
+
+	<%= f.text_field :name %>
+
+<br>
+
+	<%= f.label :description %>
+
+	<%= f.text_field :description %>
+
+<br>
+
+	<%= f.label :instructions %>
+
+	<%= f.text_field :instructions %>
+
+<br>
+
+
+	<%= f.button %>
+
+<% end %>
+</div>
