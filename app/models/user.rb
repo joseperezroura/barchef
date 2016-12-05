@@ -7,4 +7,5 @@ class User < ApplicationRecord
          validates_presence_of :first_name, :last_name, :bio, :industry, :location
 
          has_many :recipes
+         # has_many :users through 
 end

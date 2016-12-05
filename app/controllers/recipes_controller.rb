@@ -35,18 +35,13 @@ def destroy
 
 	redirect_to current_user
 
-
-
 end
 
-
-
-
-
-
 private
+
 	def recipe_params
 		params.require(:recipe).permit(:name, :description, :instructions)
 		# params[:time_entry][:hours]
 	end
+	
 end

@@ -4,13 +4,15 @@ class MainController < ApplicationController
 
 
 	def home		
+
 		if user_signed_in?			
 			@user = User.first(6)
+			@recipes = current_user.recipes
 			render :signed_in_home
 		else
 			render :home
 		end
-	end
+		end
 
 end
 

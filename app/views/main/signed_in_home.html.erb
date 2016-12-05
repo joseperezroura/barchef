@@ -52,12 +52,9 @@
 			  		<h3 class="text-center">Cocktail Recipes</h3>
 					<div class="well well-inside well-inside-following">
 						<ul class="user-home-profile-links">
-						<li><a href="#">Red-Hot Rita</a></li>
-						<li><a href="#">Georgia Peach</a></li>
-						<li><a href="#">Blue Velvet</a></li>
-						<li><a href="#">Rucker Park</a></li>
-						<li><a href="#">Opening Day</a></li>
-						<li><a href="#">Death of Elvis</a></li>
+						<% @recipes.each do |one_recipe| %>
+						<li><%= one_recipe.name %></li>
+						<% end %>
 						</ul>
 			  		</div>
 			</div>
