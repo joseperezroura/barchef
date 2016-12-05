@@ -7,34 +7,24 @@ def new
 end
 
 def create
+	@recipe = current_user.recipes.new(recipe_params)
 
-
-
-	@recipe = Recipe.new(params[:id])
-
-	# @user = @recipe.recipe_entries.new(user_params)
-
-	# @user.save
-			
-	
-	redirect_to(user_session_path)
-
-	# @recipe = Recipe.create(params[:recipe_id])		
-		
-	# 	@recipe.save
-	# 		render :new
-	# 	end
+	if @recipe.save
+		redirect_to user_path(current_user)
+	else
+		render :new
+	end
 end
 
 
 
 
 
-	# private
-	# def recipe_params
-	# 	params.require(:recipe).permit(:name, :description, :instructions)
+	private
+	def recipe_params
+		params.require(:recipe).permit(:name, :description, :instructions)
 
-	# 	# params[:time_entry][:hours]
-	# end
+		# params[:time_entry][:hours]
+	end
 
 end
