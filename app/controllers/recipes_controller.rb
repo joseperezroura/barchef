@@ -16,15 +16,14 @@ def create
 	end
 end
 
+def edit
 
+	
+	@recipe = current_user.recipe.find(recipe_params) 
+	
+	render :edit
 
-
-
-
-
-
-
-
+end
 
 
 
