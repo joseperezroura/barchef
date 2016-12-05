@@ -25,6 +25,22 @@ def edit
 
 end
 
+def destroy
+
+	recipe_id = params[:id]
+
+	@recipe = current_user.recipes.find(recipe_id)
+
+	@recipe.destroy
+
+	redirect_to current_user
+
+
+
+end
+
+
+
 
 
 

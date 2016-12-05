@@ -27,7 +27,8 @@
 					<li><h4>Recipe Name: <%= one_recipe.name %></h4></li>
 					<li>Ingredients Description: <%= one_recipe.description %></li>
 					<li>Recipe Instructions: <%= one_recipe.instructions %></li>
-					<%= link_to "Edit", edit_recipe_path(one_recipe) %>
+					<li><%= link_to "Edit", edit_recipe_path(one_recipe) %></li>
+					<li><%= link_to "Delete", recipe_path(one_recipe), method: "delete" %></li>
 					<% end %>
 				</ul>
 				</div>
