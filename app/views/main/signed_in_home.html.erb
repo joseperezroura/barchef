@@ -53,11 +53,11 @@
 					<div class="well well-inside well-inside-following">
 						<ul class="user-home-profile-links">
 						<% @recipes.each do |one_recipe| %>
-						<li><%= one_recipe.name %></li>
+						<li><%= link_to "#{one_recipe.name}", recipe_path(one_recipe) %></li>
 						<% end %>
 						</ul>
 			  		</div>
-			</div>
+			</div> 
 		</div>
 	</div>
 </div>

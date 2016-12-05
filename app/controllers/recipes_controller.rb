@@ -25,6 +25,12 @@ def edit
 
 end
 
+def show
+
+	render :show
+
+end
+
 def destroy
 
 	recipe_id = params[:id]
@@ -43,5 +49,5 @@ private
 		params.require(:recipe).permit(:name, :description, :instructions)
 		# params[:time_entry][:hours]
 	end
-	
+
 end
