@@ -27,6 +27,10 @@ end
 
 def show
 
+	recipe_id = params[:id].to_i
+
+	@recipe = current_user.recipes.find(recipe_id)
+	
 	render :show
 
 end

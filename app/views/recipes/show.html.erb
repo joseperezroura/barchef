@@ -1,1 +1,13 @@
-<h1> HIIIII </h1>
+<h1> Recipe </h1>
+
+<div class="well well-inside">
+ <ul class="text-center recipe-ul">
+					
+	 <li><h4>Recipe Name: <%= @recipe.name %></h4></li>
+	 <li>Ingredients Description: <%= @recipe.description %></li>
+	 <li>Recipe Instructions: <%= @recipe.instructions %></li>
+	 <li><%= link_to "Edit", edit_recipe_path(@recipe) %></li>
+	 <li><%= link_to "Delete", recipe_path(@recipe), method: "delete" %></li>
+	 
+ </ul>
+ </div>
