@@ -18,8 +18,8 @@ end
 
 def edit
 
-	
-	@recipe = current_user.recipe.find(recipe_params) 
+	recipe_id = params[:id]
+	@recipe = current_user.recipes.find(recipe_id)
 	
 	render :edit
 

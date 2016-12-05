@@ -25,10 +25,9 @@
 				<ul class="text-center recipe-ul">
 					<% @recipes.each do |one_recipe| %>
 					<li><h4>Recipe Name: <%= one_recipe.name %></h4></li>
-					<!-- <li><img src="../assets/julep.jpg" class="img-thumbnail img-cocktail-thumbnail" alt="Image"></li> -->
 					<li>Ingredients Description: <%= one_recipe.description %></li>
 					<li>Recipe Instructions: <%= one_recipe.instructions %></li>
-					<!-- <li><span class="recipe-notes"><strong>Notes</strong>: Combine all ingredients in shaker.  Shake and strain into rocks glass over crushed ice. Garnish with watermelon chunk.</span></li> -->
+					<%= link_to "Edit", edit_recipe_path(one_recipe) %>
 					<% end %>
 				</ul>
 				</div>
