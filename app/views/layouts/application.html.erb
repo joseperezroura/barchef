@@ -38,12 +38,19 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">ABOUT US</a></li>
+        <li>
           <% if user_signed_in? %>
-        <li><span class="glyphicon glyphicon-user"><%= link_to('LOGOUT', destroy_user_session_path, :method => :delete) %></span></li>
-            <% else %>
-        <li><span class="glyphicon glyphicon-user">
-        <%= link_to('LOGIN', new_user_session_path) %></span></li>
+            <%= link_to(destroy_user_session_path, :method => :delete) do %>
+              <span class="glyphicon glyphicon-user"></span>
+              LOGOUT
+            <% end %>
+          <% else %>
+            <%= link_to(new_user_session_path) do %>
+              <span class="glyphicon glyphicon-user"></span>
+              LOGIN
+            <% end %>
           <% end %>    
+        </li>
       </ul>
     </div>
   </div>
