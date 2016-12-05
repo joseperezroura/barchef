@@ -7,7 +7,8 @@
 				<h3>Welcome Back, <%= current_user.first_name %>!</h3><p>	
 				
 				<div class="user-home-profile-info text-center">
-				<img src="assets/jose.png" class="img-thumbnail img-user-thumbnail img-main-home-user" alt="Image">
+				<%= image_tag current_user.avatar.url(:thumb) %>
+				<!-- <img src="assets/jose.png" class="img-thumbnail img-user-thumbnail img-main-home-user" alt="Image"> -->
 				<ul class="user-home-profile-links">
 				<li><%= link_to "Profile", user_path(current_user) %></li>
 				<!-- <li><a href="#">Events</a></li> -->
@@ -27,8 +28,10 @@
 		 				<div class="well well-inside well-inside-suggested-users">
 		  					<ul class="list-of-suggested-users">
 		  						<% @user.each do |one_user| %>
-		  						<li><img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-		  						<a href="#"> <span class="user-name"><%= one_user.first_name %> <%= one_user.last_name %></span></a></li>
+		  						<li>
+								<%= image_tag one_user.avatar.url(:thumb) %>
+		  						<!-- <img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image"> -->
+		  						<a href="#"> <span class="user-name"><%= link_to "#{one_user.first_name} #{one_user.last_name}", user_path(one_user)%></span></a></li>
 	  						<% end %>
 		  					</ul>
 		  				</div>

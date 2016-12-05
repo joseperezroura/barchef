@@ -4,7 +4,7 @@
 			<div class="well well-main-profile">
 				<div class="well well-inside">
 					<ul>
-						<li><img src="../assets/john.png" class="img-thumbnail img-user-thumbnail" alt="Image"></li>
+						<li><%= image_tag @user.avatar.url(:thumb) %></li>
 							<li><h3><%= @user.first_name %> <%= @user.last_name %></h3></li>
 							<li><%= link_to "Edit Profile", edit_user_registration_path %></li>
 							<li><%= link_to "New Recipe", new_recipe_path %></li>

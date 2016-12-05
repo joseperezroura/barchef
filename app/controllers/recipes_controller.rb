@@ -50,7 +50,7 @@ end
 private
 
 	def recipe_params
-		params.require(:recipe).permit(:name, :description, :instructions)
+		params.require(:recipe).permit(:name, :description, :instructions, :avatar)
 		# params[:time_entry][:hours]
 	end
 
