@@ -8,6 +8,10 @@ class MainController < ApplicationController
 		if user_signed_in?			
 			@user = User.first(6)
 			@recipes = current_user.recipes
+
+			@followees = current_user.followees(User)
+			@followers = current_user.followers(User)
+	
 			render :signed_in_home
 		else
 			render :home

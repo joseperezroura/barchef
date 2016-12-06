@@ -42,15 +42,11 @@
 			<div class="well well-profile well-outer-sign">
 				<h3 class="text-center">Following</h3>
 					<div class="well well-inside well-inside-following">
-						<img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-						<img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-						<img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-						<img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-						<img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-						<img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-						<img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-						<img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
-						<img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image">
+						<ul>
+						<% @followees.each do |one_followee| %>
+					<li>Following: <%=  one_followee.first_name %> <%=  one_followee.last_name %></li>
+						</ul>
+								<% end %>
 			  		</div>
 			  		<h3 class="text-center">Cocktail Recipes</h3>
 					<div class="well well-inside well-inside-following">

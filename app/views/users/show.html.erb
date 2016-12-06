@@ -6,17 +6,24 @@
 					<ul>
 						<li><%= image_tag @user.avatar.url(:thumb) %></li>
 							<li><h3><%= @user.first_name %> <%= @user.last_name %></h3></li>
+										
+
+										<% if @user == current_user %>
 							<li><%= link_to "Edit Profile", edit_user_registration_path %></li>
 							<li><%= link_to "New Recipe", new_recipe_path %></li>
-							
+												<% end %>
+
 					</ul>
 				</div>
 				<ul>
+					
 					<li>Location: <strong><%= @user.location %></strong></li>
 					<li>Bio: <strong><%= @user.bio %></strong></li>
 					<li>Industry: <strong><%= @user.industry %></strong></li>
 					<li>Company: <strong><%= @user.company %></strong></li>
-					<li>Recipes: </li>
+							<% @followees.each do |one_followee| %>
+					<li>Following: <%=  one_followee.first_name %> <%=  one_followee.last_name %></li>
+								<% end %>
 				</ul>
 			</div>
 		</div>
@@ -29,8 +36,10 @@
 					<li><%= image_tag one_recipe.avatar.url(:thumb) %></li>
 					<li>Ingredients Description: <%= one_recipe.description %></li>
 					<li>Recipe Instructions: <%= one_recipe.instructions %></li>
+							<% if @user == current_user %>
 					<li><%= link_to "Edit", edit_recipe_path(one_recipe) %></li>
 					<li><%= link_to "Delete", recipe_path(one_recipe), method: "delete" %></li>
+							<% end %>
 					<% end %>
 				</ul>
 				</div>
