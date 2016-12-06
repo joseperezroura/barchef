@@ -13,7 +13,7 @@ class User < ApplicationRecord
 
   acts_as_followable
   acts_as_follower
-  # has_many :followers, :through => :users
-  # has_many :followees, :through => :users
+  acts_as_liker
+  
 
 end

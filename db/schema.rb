@@ -10,21 +10,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161206150917) do
+ActiveRecord::Schema.define(version: 20161206155652) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "follows", force: :cascade do |t|
-    t.string   "followable_type",                 null: false
-    t.integer  "followable_id",                   null: false
-    t.string   "follower_type",                   null: false
-    t.integer  "follower_id",                     null: false
-    t.boolean  "blocked",         default: false, null: false
+    t.string   "follower_type"
+    t.integer  "follower_id"
+    t.string   "followable_type"
+    t.integer  "followable_id"
     t.datetime "created_at"
-    t.datetime "updated_at"
     t.index ["followable_id", "followable_type"], name: "fk_followables", using: :btree
     t.index ["follower_id", "follower_type"], name: "fk_follows", using: :btree
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.string   "liker_type"
+    t.integer  "liker_id"
+    t.string   "likeable_type"
+    t.integer  "likeable_id"
+    t.datetime "created_at"
+    t.index ["likeable_id", "likeable_type"], name: "fk_likeables", using: :btree
+    t.index ["liker_id", "liker_type"], name: "fk_likes", using: :btree
+  end
+
+  create_table "mentions", force: :cascade do |t|
+    t.string   "mentioner_type"
+    t.integer  "mentioner_id"
+    t.string   "mentionable_type"
+    t.integer  "mentionable_id"
+    t.datetime "created_at"
+    t.index ["mentionable_id", "mentionable_type"], name: "fk_mentionables", using: :btree
+    t.index ["mentioner_id", "mentioner_type"], name: "fk_mentions", using: :btree
   end
 
   create_table "recipes", force: :cascade do |t|
