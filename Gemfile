@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "acts_as_follower"
 gem "paperclip", "~> 5.0.0"
 gem 'devise'
 gem 'rails_12factor', group: :production

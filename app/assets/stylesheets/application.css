@@ -82,16 +82,16 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }
 
 .user-home-profile-links{
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
 }
 
 .img-main-home-user{
     
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 
 }
 
@@ -104,7 +104,6 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 .text-suggestions-h1{
   margin-bottom: 40px;
 }
-
 .well-inside {
   border-color: grey;
 }
@@ -122,7 +121,7 @@ ul {
 }
 .img-user-thumbnail{
   height: 55px;
-    width: auto;
+  width: auto;
 }
 
 .row-main-user-home > div {
@@ -143,7 +142,6 @@ ul {
   border-radius: 0px;
 }
 
-
 .field{
   margin: 10px 0px;
 }
@@ -155,50 +153,47 @@ ul {
 }
 
 .middle-banner-signup {
-		margin: 60px 180px;
+	margin: 60px 180px;
  }
 
 .julep{
- 		position: relative;
-		margin-left: 30px;
-		margin-top: 0px;
+ 	position: relative;
+	margin-left: 30px;
+	margin-top: 0px;
  }
 	
- 	input.form-control{
- 		padding-top: 0px;
- 		padding-bottom: 0px;
- 		padding-right: 60px;
- 		padding-left: 10px;
+input.form-control{
+ 	padding-top: 0px;
+ 	padding-bottom: 0px;
+ 	padding-right: 60px;
+ 	padding-left: 10px;
  	}
 	
-	.form-search{
-		margin-top: 9px;
-		margin-left: 40px;
+.form-search{
+	margin-top: 9px;
+	margin-left: 40px;
 	}
 
 .instagram{
-		position: relative;
-		margin-left: 800px;
-		margin-top: -22px;
+	position: relative;
+	margin-left: 800px;
+	margin-top: -22px;
 	}
-
-	.btn-home{
-		padding: 5px;
-		background-color: white;
-		border-color: black;
+.btn-home{
+	padding: 5px;
+	background-color: white;
+	border-color: black;
 	}
 
 .lower-banner{
  	margin-top: 40px;
  	}
     
-.sign-up-form{
+.sign-up-form
 	margin-top: 0px;
 	}
 
-.home-img-stuff{
-		position: relative;
-    margin-top: -50px;    	
+.home-img-stuff{position: relative;margin-top: -50px;    	
 	}
 
 .chef-title {
@@ -230,8 +225,8 @@ ul {
     }
 
 .middle-banner {
-    	margin: 0 30px;	
-    	font-size: 15px;
+  margin: 0 30px;	
+  font-size: 15px;
     }   
 
 .middle-banner .col-sm-4 {
