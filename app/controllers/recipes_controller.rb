@@ -27,6 +27,19 @@ def edit
 
 end
 
+def update
+
+	recipe_id = params[:id]
+	@recipe = current_user.recipes.find(recipe_id)
+
+	if @recipe.update(recipe_params)
+		redirect_to user_path(current_user)
+	else
+		render :edit
+	end
+
+end
+
 def show
 
 	recipe_id = params[:id].to_i
