@@ -9,6 +9,8 @@ end
 def create
 	@recipe = current_user.recipes.new(recipe_params)
 
+	
+	
 	if @recipe.save
 		redirect_to user_path(current_user)
 	else

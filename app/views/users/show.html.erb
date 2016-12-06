@@ -25,6 +25,7 @@
 				<ul class="text-center recipe-ul">
 					<% @recipes.each do |one_recipe| %>
 					<li><h4>Recipe Name: <%= one_recipe.name %></h4></li>
+					<li><%= image_tag one_recipe.avatar.url(:thumb) %></li>
 					<li>Ingredients Description: <%= one_recipe.description %></li>
 					<li>Recipe Instructions: <%= one_recipe.instructions %></li>
 					<li><%= link_to "Edit", edit_recipe_path(one_recipe) %></li>

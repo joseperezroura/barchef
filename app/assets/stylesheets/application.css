@@ -13,6 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+/*.img-raised {
+box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
+}*/
+
+
 .recipe-ul {
   padding-left: 0px;
 }
@@ -178,7 +184,7 @@ ul {
 
 	.btn-home{
 		padding: 5px;
-		background-color: #c0c0c0;
+		background-color: white;
 		border-color: black;
 	}
 
@@ -215,6 +221,7 @@ ul {
 
 .img-home{
 	margin-top: 20px;
+  box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 	  }
 
 .menu_bar {
