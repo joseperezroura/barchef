@@ -12,6 +12,18 @@ def show
 	render :show
 end
 
+def follow
+
+	follower = current_user
+	followee = User.find(params[:id])
+
+	follower.follow!(followee)
+
+	redirect_to(:back)
+
+
+end
+
 
 
 

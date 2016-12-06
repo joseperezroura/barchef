@@ -6,7 +6,10 @@ Rails.application.routes.draw do
 
 
   
-  resources :recipes 
+ resources :recipes 
 
  resources :users 
+
+ post '/follow/:id', to: 'users#follow'
+
 end
