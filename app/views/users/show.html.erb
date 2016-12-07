@@ -8,15 +8,17 @@
 							<li><h3><%= @user.first_name %> <%= @user.last_name %></h3></li>
 										<% if @user == current_user %>
 							<li><%= link_to "Edit Profile", edit_user_registration_path %></li>
-							<li><%= link_to "New Recipe", new_recipe_path %></li>
+							<li><%= link_to "Add New Recipe", new_recipe_path %></li>
 												<% end %>
-                            			
+                            			<br><li>Following: <%= current_user.followees_count %></li>
+                            			<li>Followers: <%= current_user.followers_count %></li>
                             			<% if current_user.follows?(@user) %>
                             <li> <%= link_to "Unfollow", "/unfollow/#{@user.id}", method: :post, class: "btn btn-default btn-follow " %>
 											<% else %>
 							<li> <%= link_to "Follow", "/follow/#{@user.id}", method: :post, class: "btn btn-default btn-follow " %>
                                               </li>
                             			<% end %>
+
 					 </ul>
 				    </div>
 				
