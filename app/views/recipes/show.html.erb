@@ -4,6 +4,7 @@
  <ul class="text-center recipe-ul">
 					
 	 <li><h4>Recipe Name: <%= @recipe.name %></h4></li>
+	 <li><%= image_tag @recipe.avatar.url(:thumb) %></li>
 	 <li>Ingredients Description: <%= @recipe.description %></li>
 	 <li>Recipe Instructions: <%= @recipe.instructions %></li>
 	 <li><%= link_to "Edit", edit_recipe_path(@recipe) %></li>

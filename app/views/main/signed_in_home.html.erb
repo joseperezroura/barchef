@@ -30,7 +30,6 @@
 		  						<% @user.each do |one_user| %>
 		  						<li>
 								<%= image_tag one_user.avatar.url(:thumb) %>
-		  						<!-- <img src="assets/jose.png" class="img-thumbnail img-user-thumbnail" alt="Image"> -->
 		  						<a href="#"> <span class="user-name"><%= link_to "#{one_user.first_name} #{one_user.last_name}", user_path(one_user)%></span></a></li>
 	  						<% end %>
 		  					</ul>
@@ -44,9 +43,10 @@
 					<div class="well well-inside well-inside-following">
 						<ul>
 						<% @followees.each do |one_followee| %>
-					<li><%=  one_followee.first_name %> <%=  one_followee.last_name %></li>
-						</ul>
+					<li> <%=  link_to "#{one_followee.first_name} #{one_followee.last_name}", user_path(one_followee) %> </li>
+						
 								<% end %>
+					</ul>
 			  		</div>
 			  		<h3 class="text-center">Cocktail Recipes</h3>
 					<div class="well well-inside well-inside-following">
