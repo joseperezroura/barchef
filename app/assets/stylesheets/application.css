@@ -40,7 +40,7 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }
 
 .well-main-profile {
-  height: 700px;
+  /*height: 700px;*/
   border-radius: 0px;
   border-color: black;
   margin-top: 15px;
