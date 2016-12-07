@@ -17,6 +17,11 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+.well-main-profile{
+  background-color: #C3E0E2;
+}
+
+
 .row-profile-main{
   margin-top: 10px;
 }
