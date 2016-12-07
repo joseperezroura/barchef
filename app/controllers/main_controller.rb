@@ -6,7 +6,7 @@ class MainController < ApplicationController
 	def home		
 
 		if user_signed_in?			
-			@user = User.first(6)
+			@user = User.first(12)
 			@recipes = current_user.recipes
 
 			@followees = current_user.followees(User)

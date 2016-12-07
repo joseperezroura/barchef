@@ -10,8 +10,8 @@
 							<li><%= link_to "Edit Profile", edit_user_registration_path %></li>
 							<li><%= link_to "Add New Recipe", new_recipe_path %></li>
 												<% end %>
-                            			<br><li>Following: <%= current_user.followees_count %></li>
-                            			<li>Followers: <%= current_user.followers_count %></li>
+                            			<br><li>Following: <%= @user.followees_count %></li>
+                            			<li>Followers: <%= @user.followers_count %></li>
                             			<% if current_user.follows?(@user) %>
                             <li> <%= link_to "Unfollow", "/unfollow/#{@user.id}", method: :post, class: "btn btn-default btn-follow " %>
 											<% else %>
@@ -62,7 +62,7 @@
 				<li><%= image_tag one_recipe.avatar.url(:medium), class: "img-thumbnail img-recipe" %></li>
 					<li><h4>Recipe Name: <%= link_to "#{one_recipe.name}", recipe_path(one_recipe) %></h4></li>
 					
-					<li><strong>Ingredients Description:</strong> <%= one_recipe.description %></li>
+					<li><strong>Ingredients:</strong> <%= one_recipe.description %></li>
 					<li><strong>Recipe Instructions:</strong> <%= one_recipe.instructions %></li><br>
 							<% if @user == current_user %>
 					<li><%= link_to "Edit", edit_recipe_path(one_recipe)  %></li>
