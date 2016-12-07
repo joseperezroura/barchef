@@ -43,6 +43,15 @@
 								<% end %>
                 </ul>
                 </div>
+                <div class="well well-inside text-center">
+                <ul class="well-left-profile">
+                	<li><strong>Liked Recipes</strong></li><br>
+                	<% @liked_recipes.each do |one_liked_recipe| %>
+					<li> <%=  link_to "#{one_liked_recipe.name}", recipe_path(one_liked_recipe) %> </li>
+						
+								<% end %>
+                </ul>
+                </div>
 			</div>
 		</div>
 		<div class="col-sm-8 col-profile-main">
@@ -59,6 +68,14 @@
 					<li><%= link_to "Edit", edit_recipe_path(one_recipe)  %></li>
 					<li><%= link_to "Delete", recipe_path(one_recipe), method: "delete" %></li>
 							<% end %>
+							<% if current_user.likes?(one_recipe) %>
+					<li> <%= link_to "Unlike", "/unlike/#{one_recipe.id}", method: :post, class: "btn btn-default btn-follow " %>
+                                              </li><br>
+                                              <% else %>
+                    <li> <%= link_to "Like", "/like/#{one_recipe.id}", method: :post, class: "btn btn-default btn-follow " %>
+                                              </li><br>
+                    		<% end %>
+                    		<li>Likes: <%= one_recipe.likers_count %></li>
 				</ul>
 				</div>
 			</div>

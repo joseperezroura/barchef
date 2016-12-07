@@ -43,9 +43,9 @@ end
 def show
 
 	recipe_id = params[:id].to_i
+	@recipe = Recipe.find(recipe_id)
+		
 
-	@recipe = current_user.recipes.find(recipe_id)
-	
 	render :show
 
 end
@@ -61,6 +61,27 @@ def destroy
 	redirect_to current_user
 
 end
+
+def like
+
+	
+	recipe_id = params[:id].to_i
+	likee = Recipe.find(recipe_id)
+	current_user.like!(likee)
+	redirect_to(:back)
+
+end
+
+def unlike
+
+	
+	recipe_id = params[:id].to_i
+	likee = Recipe.find(recipe_id)
+	current_user.unlike!(likee)
+	redirect_to(:back)
+
+end
+
 
 private
 

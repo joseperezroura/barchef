@@ -8,6 +8,7 @@ def show
 	@recipes = @user.recipes
 	@followees = @user.followees(User)
 	@followers = @user.followers(User)
+	@liked_recipes = current_user.likees(Recipe)
 
 	render :show
 end
@@ -27,9 +28,8 @@ def unfollow
 	followee = User.find(params[:id])
 	follower.unfollow!(followee)
 	redirect_to(:back)
-
-
 end
+
 
 
 
