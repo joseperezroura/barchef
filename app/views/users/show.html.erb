@@ -13,16 +13,16 @@
 							<li><%= link_to "New Recipe", new_recipe_path %></li>
 												<% end %>
                             <li> <%= link_to "Follow", "/follow/#{@user.id}", method: :post %>                  </li>
-					</ul>
-				</div>
-				<ul>
+					 </ul>
+				    </div>
+				    <ul>
 					
 					<li>Location: <strong><%= @user.location %></strong></li>
 					<li>Bio: <strong><%= @user.bio %></strong></li>
 					<li>Industry: <strong><%= @user.industry %></strong></li>
 					<li>Company: <strong><%= @user.company %></strong></li>
 							<% @followees.each do |one_followee| %>
-					<li>Following: <%=  one_followee.first_name %> <%=  one_followee.last_name %></li>
+					<li><%=  one_followee.first_name %> <%=  one_followee.last_name %></li>
 								<% end %>
 				</ul>
 			</div>
