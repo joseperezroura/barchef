@@ -11,5 +11,5 @@ Rails.application.routes.draw do
  resources :users 
 
  post '/follow/:id', to: 'users#follow'
-
+ post '/unfollow/:id', to: 'users#unfollow'
 end

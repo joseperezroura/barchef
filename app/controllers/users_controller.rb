@@ -16,14 +16,20 @@ def follow
 
 	follower = current_user
 	followee = User.find(params[:id])
-
 	follower.follow!(followee)
+	redirect_to(:back)
 
+end
+
+def unfollow
+
+	follower = current_user
+	followee = User.find(params[:id])
+	follower.unfollow!(followee)
 	redirect_to(:back)
 
 
 end
-
 
 
 

@@ -10,7 +10,13 @@
 							<li><%= link_to "Edit Profile", edit_user_registration_path %></li>
 							<li><%= link_to "New Recipe", new_recipe_path %></li>
 												<% end %>
-                            <li> <%= link_to "Follow", "/follow/#{@user.id}", method: :post, class: "btn btn-default btn-follow " %>                  </li>
+                            			
+                            			<% if current_user.follows?(@user) %>
+                            <li> <%= link_to "Unfollow", "/unfollow/#{@user.id}", method: :post, class: "btn btn-default btn-follow " %>
+											<% else %>
+							<li> <%= link_to "Follow", "/follow/#{@user.id}", method: :post, class: "btn btn-default btn-follow " %>
+                                              </li>
+                            			<% end %>
 					 </ul>
 				    </div>
 				

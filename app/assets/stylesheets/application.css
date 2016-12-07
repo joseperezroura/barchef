@@ -17,6 +17,9 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+.row-profile-main{
+  margin-top: 10px;
+}
 ul.list-of-suggested-users {
   padding-left: 35px;
   padding-top: 10px;
