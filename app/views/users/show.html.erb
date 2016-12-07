@@ -2,21 +2,21 @@
 	<div class="row row-profile-main">
 		<div class="col-sm-3">
 			<div class="well well-main-profile">
-				<div class="well well-inside">
-					<ul>
+				<div class="well well-inside text-center ">
+					<ul class="well-left-profile">
 						<li><%= image_tag @user.avatar.url(:thumb) %></li>
 							<li><h3><%= @user.first_name %> <%= @user.last_name %></h3></li>
 										<% if @user == current_user %>
 							<li><%= link_to "Edit Profile", edit_user_registration_path %></li>
 							<li><%= link_to "New Recipe", new_recipe_path %></li>
 												<% end %>
-                            <li> <%= link_to "Follow", "/follow/#{@user.id}", method: :post, class: "btn btn-default btn-home" %>                  </li>
+                            <li> <%= link_to "Follow", "/follow/#{@user.id}", method: :post, class: "btn btn-default btn-follow " %>                  </li>
 					 </ul>
 				    </div>
 				
 
 				<div class="well well-inside text-center">
-				<ul>
+				<ul class="well-left-profile">
 					<li>Location: <strong><%= @user.location %></strong></li>
 					<li>Bio: <strong><%= @user.bio %></strong></li>
 					<li>Industry: <strong><%= @user.industry %></strong></li>
@@ -25,8 +25,8 @@
 				</ul>
 				</div>
 			
-                <div class="well well-inside">
-                <ul>
+                <div class="well well-inside text-center">
+                <ul class="well-left-profile">
                 	<% @followees.each do |one_followee| %>
 					<li> <%=  link_to "#{one_followee.first_name} #{one_followee.last_name}", user_path(one_followee) %> </li>
 						
@@ -40,10 +40,11 @@
 			<div class="well well-main-profile well-main-profile-2">
 				<div class="well well-inside">
 				<ul class="text-center recipe-ul">			
-					<li><h4>Recipe Name: <%= one_recipe.name %></h4></li>
-					<li><%= image_tag one_recipe.avatar.url(:thumb) %></li>
-					<li>Ingredients Description: <%= one_recipe.description %></li>
-					<li>Recipe Instructions: <%= one_recipe.instructions %></li>
+				<li><%= image_tag one_recipe.avatar.url(:medium), class: "img-thumbnail img-recipe" %></li>
+					<li><h4>Recipe Name: <%= link_to "#{one_recipe.name}", recipe_path(one_recipe) %></h4></li>
+					
+					<li><strong>Ingredients Description:</strong> <%= one_recipe.description %></li>
+					<li><strong>Recipe Instructions:</strong> <%= one_recipe.instructions %></li><br>
 							<% if @user == current_user %>
 					<li><%= link_to "Edit", edit_recipe_path(one_recipe)  %></li>
 					<li><%= link_to "Delete", recipe_path(one_recipe), method: "delete" %></li>

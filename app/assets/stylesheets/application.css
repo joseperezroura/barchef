@@ -17,6 +17,13 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+.well-left-profile {
+  padding-left: 20px;
+}
+
+.btn-follow {
+  margin-top: 20px;
+}
 
 .home-blurb{
   color: black;
@@ -55,6 +62,9 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
   border: 1px solid black; 
 }
 
+.img-recipe {
+  border: 1px solid black;
+}
 .navbar-inverse .navbar-brand {
   color: black;
 }
@@ -111,6 +121,7 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }
 .well-inside {
   border-color: grey;
+  padding-left: 0px;
 }
 
 .well-inside-following{
@@ -123,6 +134,7 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 
 ul {
   list-style-type: none;
+
 }
 .img-user-thumbnail{
   height: 55px;
