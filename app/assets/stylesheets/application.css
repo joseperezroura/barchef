@@ -18,7 +18,11 @@
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
 
-
+.home-blurb{
+  color: black;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
 .recipe-ul {
   padding-left: 0px;
 }
@@ -189,11 +193,11 @@ input.form-control{
  	margin-top: 40px;
  	}
     
-.sign-up-form
+.sign-up-form{
 	margin-top: 0px;
 	}
 
-.home-img-stuff{position: relative;margin-top: -50px;    	
+.home-img-stuff{position: relative;margin-top: -5px;    	
 	}
 
 .chef-title {
@@ -215,7 +219,7 @@ input.form-control{
     }
 
 .img-home{
-	margin-top: 20px;
+	margin-top: 15px;
   box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 	  }
 
@@ -231,6 +235,7 @@ input.form-control{
 
 .middle-banner .col-sm-4 {
 		text-align: center;
+    margin-top: 20px;
 	}   
 
 .jumbotron {
