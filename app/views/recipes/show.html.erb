@@ -1,25 +1,27 @@
-<h1> Recipe </h1>
+
 
 <!-- <div class="well well-inside"> -->
- 
+<div class="container"> 
+<div class="col-sm-2">
+</div>
 
+<div class="col-sm-8">
 <div class="well well-main-profile well-main-profile-2">
 <div class="well well-inside">
-
-
  <ul class="text-center recipe-ul">
-	 <li><%= image_tag @recipe.avatar.url(:thumb) %></li>				
-	 <li><h4>Recipe Name: <%= @recipe.name %></h4></li>
+	 <li><h1><center><%= @recipe.name %></center></h1></li><br>
+	 <li><%= image_tag @recipe.avatar.url(:medium) %></li><br>				
 	 
-	 <li>Ingredients Description: <%= @recipe.description %></li>
-	 <li>Recipe Instructions: <%= @recipe.instructions %></li>
+	 <li><strong>Ingredients Description:</strong> <%= @recipe.description %></li>
+	 <li><strong>Recipe Instructions:</strong> <%= @recipe.instructions %></li><br>
 	 <li><%= link_to "Edit", edit_recipe_path(@recipe) %></li>
-	 <li><%= link_to "Delete", recipe_path(@recipe), method: "delete" %></li>
-	 
- </ul>
- 
+	 <li><%= link_to "Delete", recipe_path(@recipe), method: "delete" %></li>	 
+ </ul> 
+</div>
+</div>
 </div>
 
+<div class="col-sm-2">
 </div>
-
+</div>
  <!-- </div> -->

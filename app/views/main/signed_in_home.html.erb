@@ -49,7 +49,7 @@
 					    </ul>
 			  		</div>
 			  		<h3 class="text-center">Cocktail Recipes</h3>
-					<div class="well well-inside well-inside-following">
+					<div class="well well-inside well-inside-following text-center">
 						<ul class="user-home-profile-links">
 						<% @recipes.each do |one_recipe| %>
 						<li><%= link_to "#{one_recipe.name}", recipe_path(one_recipe) %></li>

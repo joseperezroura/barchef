@@ -17,12 +17,18 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+ul.list-of-suggested-users {
+  padding-left: 35px;
+  padding-top: 10px;
+}
+
 .well-left-profile {
   padding-left: 20px;
 }
 
 .btn-follow {
   margin-top: 20px;
+  background-color: #C3E0E2;
 }
 
 .home-blurb{

@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row row-profile-main">
-		<div class="col-sm-3">
+		<div class="col-sm-4">
 			<div class="well well-main-profile">
 				<div class="well well-inside text-center ">
 					<ul class="well-left-profile">
@@ -17,16 +17,18 @@
 
 				<div class="well well-inside text-center">
 				<ul class="well-left-profile">
-					<li>Location: <strong><%= @user.location %></strong></li>
-					<li>Bio: <strong><%= @user.bio %></strong></li>
-					<li>Industry: <strong><%= @user.industry %></strong></li>
-					<li>Company: <strong><%= @user.company %></strong></li>
+					<li><strong>USER INFORMATION</strong></li><br>
+					<li>Location: <%= @user.location %></li>
+					<li>Bio: <%= @user.bio %></li>
+					<li>Industry: <%= @user.industry %></li>
+					<li>Company: <%= @user.company %></li>
 							
 				</ul>
 				</div>
 			
                 <div class="well well-inside text-center">
                 <ul class="well-left-profile">
+                	<li><strong>FOLLOWING</strong></li><br>
                 	<% @followees.each do |one_followee| %>
 					<li> <%=  link_to "#{one_followee.first_name} #{one_followee.last_name}", user_path(one_followee) %> </li>
 						
@@ -35,7 +37,7 @@
                 </div>
 			</div>
 		</div>
-		<div class="col-sm-9 col-profile-main">
+		<div class="col-sm-8 col-profile-main">
 			<% @recipes.each do |one_recipe| %>
 			<div class="well well-main-profile well-main-profile-2">
 				<div class="well well-inside">
