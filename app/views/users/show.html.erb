@@ -6,46 +6,50 @@
 					<ul>
 						<li><%= image_tag @user.avatar.url(:thumb) %></li>
 							<li><h3><%= @user.first_name %> <%= @user.last_name %></h3></li>
-										
-
 										<% if @user == current_user %>
 							<li><%= link_to "Edit Profile", edit_user_registration_path %></li>
 							<li><%= link_to "New Recipe", new_recipe_path %></li>
 												<% end %>
-                            <li> <%= link_to "Follow", "/follow/#{@user.id}", method: :post %>                  </li>
+                            <li> <%= link_to "Follow", "/follow/#{@user.id}", method: :post, class: "btn btn-default btn-home" %>                  </li>
 					 </ul>
 				    </div>
-				    <ul>
-					
+				
+
+				<div class="well well-inside text-center">
+				<ul>
 					<li>Location: <strong><%= @user.location %></strong></li>
 					<li>Bio: <strong><%= @user.bio %></strong></li>
 					<li>Industry: <strong><%= @user.industry %></strong></li>
 					<li>Company: <strong><%= @user.company %></strong></li>
-							<% @followees.each do |one_followee| %>
-					<li><%=  one_followee.first_name %> <%=  one_followee.last_name %></li>
-								<% end %>
+							
 				</ul>
+				</div>
+			
+                <div class="well well-inside">
+                <ul>
+                	<% @followees.each do |one_followee| %>
+					<li> <%=  link_to "#{one_followee.first_name} #{one_followee.last_name}", user_path(one_followee) %> </li>
+						
+								<% end %>
+                </ul>
+                </div>
 			</div>
 		</div>
 		<div class="col-sm-9 col-profile-main">
 			<% @recipes.each do |one_recipe| %>
 			<div class="well well-main-profile well-main-profile-2">
-				
 				<div class="well well-inside">
-				<ul class="text-center recipe-ul">
-					
+				<ul class="text-center recipe-ul">			
 					<li><h4>Recipe Name: <%= one_recipe.name %></h4></li>
 					<li><%= image_tag one_recipe.avatar.url(:thumb) %></li>
 					<li>Ingredients Description: <%= one_recipe.description %></li>
 					<li>Recipe Instructions: <%= one_recipe.instructions %></li>
 							<% if @user == current_user %>
-					<li><%= link_to "Edit", edit_recipe_path(one_recipe) %></li>
+					<li><%= link_to "Edit", edit_recipe_path(one_recipe)  %></li>
 					<li><%= link_to "Delete", recipe_path(one_recipe), method: "delete" %></li>
 							<% end %>
-					
 				</ul>
 				</div>
-
 			</div>
 			<% end %>
 		</div>
@@ -54,10 +58,7 @@
 
 
 
-<!-- 
-					<li>Ingredient 2: <strong>Lime Juice</strong>  Measurement: .75oz</li>
-					<li>Ingredient 3: <strong>Agave</strong>  Measurement: .5oz</li>
-					<li>Ingredient 4: <strong>Sriracha</strong>  Measurement: Barspoon</li> -->
+
 
 
 
