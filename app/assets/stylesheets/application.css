@@ -20,7 +20,9 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 .well-main-profile{
   background-color: #C3E0E2;
 }
-
+.sign-up-form-block{
+  margin-right: 90px;
+}
 
 .row-profile-main{
   margin-top: 10px;
@@ -178,20 +180,24 @@ ul {
 }
 
 .sign-thumbnail {
-	margin-top: 40px;
+/*	margin-top: 40px;
   background-color: #c0c0c0;
-	border: 2px solid #c0c0c0;
+	border: 2px solid #c0c0c0;*/
+  height: 500px;
+  margin-left: -130px;
+  margin-top: -20px;
+
 }
 
 .middle-banner-signup {
 	margin: 60px 180px;
  }
 
-.julep{
+/*.julep{
  	position: relative;
 	margin-left: 30px;
 	margin-top: 0px;
- }
+ }*/
 	
 input.form-control{
  	padding-top: 0px;
