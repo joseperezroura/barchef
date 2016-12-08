@@ -1,21 +1,30 @@
-<h1> Edit Recipe </h1>
+<div class="container">
+	<div class="row row-edit-recipe">
+		<div class="col-12-sm">
+		<h1> Edit Recipe </h1>
 
-<%= form_for [@recipe], html: { multipart: true } do |f| %>
+			<%= form_for [@recipe], html: { multipart: true } do |f| %>
+		
+		<br>
 
-
-	<%= f.label :description %>
-
-	<%= f.text_field :description %>
-
-<br>
-
-	<%= f.label :instructions %>
-
-	<%= f.text_field :instructions %>
-
-<br>
-	<%= f.file_field :avatar %>
-
-	<%= f.button %>
+			<%= f.label :description %>
+		<br>
+			<%= f.text_field :description %>
 	
-<% end %>
+		<br>
+
+			<%= f.label :instructions %>
+		<br>
+			<%= f.text_field :instructions %>
+
+		<br>
+			<%= f.file_field :avatar %>
+		
+		<br>
+
+			<%= f.button %>
+	
+			<% end %>
+		</div>
+	</div>
+</div>

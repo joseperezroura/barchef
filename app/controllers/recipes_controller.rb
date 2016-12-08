@@ -12,8 +12,10 @@ def create
 	
 	
 	if @recipe.save
+
 		redirect_to user_path(current_user)
 	else
+		flash[:message] = "Sorry this name is already taken!"
 		render :new
 	end
 end

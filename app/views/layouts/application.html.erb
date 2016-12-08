@@ -57,6 +57,9 @@
   </div>
 </nav>   
  
+ <% if !flash.empty? %>
+ <%= flash[:message] %>
+ <% end %>
  <%= yield %>
 
 <br>

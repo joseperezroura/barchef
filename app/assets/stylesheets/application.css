@@ -17,6 +17,16 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+.row-new-recipe{
+  margin-left: 350px;
+  margin-top: 40px;
+}
+
+.row-edit-recipe{
+  margin-left: 350px;
+  margin-top: 40px;
+}
+
 .well-main-profile{
   background-color: #C3E0E2;
 }
@@ -283,7 +293,8 @@ footer {
   background-color: #f2f2f2;
   padding: 10px;
   position: relative;
-  bottom: 0;
+  margin-top: 120px;
+  bottom: 0px;
   width: 100%;
   border: 1px solid black
     }
