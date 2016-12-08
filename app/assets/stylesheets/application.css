@@ -17,6 +17,13 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+div.well.well-inside.well-inside-suggested-users {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+}
+
+
 .row-new-recipe{
   margin-left: 350px;
   margin-top: 40px;
@@ -38,8 +45,9 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
   margin-top: 10px;
 }
 ul.list-of-suggested-users {
-  padding-left: 35px;
+  padding-left: 80px;
   padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 .well-left-profile {
@@ -108,7 +116,7 @@ ul.list-of-suggested-users {
 }
 
 .list-of-suggested-users li{
-  display: inline-block; 
+  display: inline-table; 
   width: 49%;
 }
 
@@ -180,7 +188,9 @@ ul {
 }
 
 .well-suggested-users{
-  height: 700px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 0px;
   background-color: #C3E0E2;
   border-radius: 0px;
 }

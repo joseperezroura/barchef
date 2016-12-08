@@ -29,7 +29,7 @@
 		  					<ul class="list-of-suggested-users">
 		  						<% @user.each do |one_user| %>
 		  						<li>
-								<%= image_tag one_user.avatar.url(:thumb) %>
+								<%= image_tag one_user.avatar.url(:thumb) %><p>
 		  						<a href="#"> <span class="user-name"><%= link_to "#{one_user.first_name} #{one_user.last_name}", user_path(one_user)%></span></a></li>
 	  						<% end %>
 		  					</ul>
