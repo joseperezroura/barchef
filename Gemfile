@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
+
 gem "socialization"
 
 gem "paperclip", "~> 5.0.0"
+gem 'aws-sdk', '~> 2.3'
 gem 'devise'
 gem 'rails_12factor', group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
