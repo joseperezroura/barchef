@@ -12,4 +12,7 @@ Rails.application.routes.draw do
 
  post '/like/:id', to: 'recipes#like'
  post '/unlike/:id', to: 'recipes#unlike'
+
+ get '/search/:id', to: 'search#index'
+
 end

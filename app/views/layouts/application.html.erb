@@ -25,17 +25,19 @@
         
         <li><%= link_to "HOME", root_path %></li>
         <li><a href="#">INBOX</a></li>
-        <!-- <li><form class="navbar-form navbar-right" role="search">
-        <div class="form-group input-group">
-          <input type="text" class="form-control" placeholder="Search..">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">
-              <span class="glyphicon glyphicon-search"></span>
-            </button>
-          </span>        
-        </div>
-      </form><div class="input-group-btn">
-      </li> -->
+        <li>
+          <%= form_tag '/search/:id', :method => 'get', :class => "navbar-form navbar-right" do  %>
+            <div class="form-group input-group">
+              <%= text_field_tag :search, params[:search], class:"form-control", placeholder:"Search.." %>
+
+              <span class="input-group-btn">
+                <button class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>        
+            </div>
+        <% end %>
+      </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">ABOUT US</a></li>

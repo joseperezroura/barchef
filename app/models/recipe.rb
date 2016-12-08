@@ -6,5 +6,12 @@ belongs_to :user
 validates_uniqueness_of :name
 acts_as_likeable
 
+def self.search(search)
+  if search
+    where('name LIKE ? OR description LIKE ?', "%#{search}%", "%#{search}%")
+  else
+    all
+  end
+end
 	
 end

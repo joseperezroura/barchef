@@ -1,0 +1,18 @@
+
+	<div class="row text-center">
+		<h1>Search Results</h1>
+	</div>
+	<div class="row">
+		<div class="container">
+		<div class="col-6-sm">
+		<% @user.each do |one_user| %>	
+			User Search Result: <%= link_to "#{one_user.first_name} #{one_user.last_name}", user_path(one_user)%>
+		<% end %>
+		</div>
+		<div class="col-6-sm">
+		<% @recipe.each do |one_recipe| %>
+			Recipe Result: <%= link_to "#{one_recipe.name}", recipe_path(one_recipe)%>
+		<% end %>
+		</div>
+		</div>
+	</div>

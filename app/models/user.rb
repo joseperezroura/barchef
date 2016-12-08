@@ -15,5 +15,12 @@ class User < ApplicationRecord
   acts_as_follower
   acts_as_liker
   
+  def self.search(search)
+    if search
+      where('first_name LIKE ? OR last_name LIKE ?', "%#{search}%", "%#{search}%")
+    else
+      all
+    end
+  end
 
 end
