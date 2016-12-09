@@ -23,12 +23,12 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         
-        <li><%= link_to "HOME", root_path %></li>
+        <!-- <li><%= link_to "HOME", root_path %></li> -->
         <!-- <li><a href="#">INBOX</a></li> -->
         <li>
           <%= form_tag '/search/:id', :method => 'get', :class => "navbar-form navbar-right" do  %>
             <div class="form-group input-group">
-              <%= text_field_tag :search, params[:search], class:"form-control", placeholder:"Search..Users/Recipes" %>
+              <%= text_field_tag :search, params[:search], class:"form-control", placeholder:"Search...Users or Recipes" %>
 
               <span class="input-group-btn">
                 <button class="btn btn-default">

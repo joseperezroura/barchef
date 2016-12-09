@@ -17,8 +17,31 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+input#user_remember_me{
+  width: 12px;
+}
+input#user_avatar{
+  margin-left: 30px;
+}
+
+div.field{
+  margin-bottom: 25px;
+}
+
+input {
+  width: 200px;
+}
+
+input#recipe_description{
+  width: 300px;
+}
+input#recipe_instructions{
+  width: 300px;
+  }
+
 .middle-banner-edit{
   margin-top: 10px;
+  margin-left: 40px;
 }
 
 div.well.well-inside.well-inside-suggested-users {
@@ -29,6 +52,7 @@ div.well.well-inside.well-inside-suggested-users {
 
 input#search.form-control{
   padding-right: 30px;
+  width: 300px;
 }
 .row-new-recipe{
   margin-left: 350px;
@@ -48,7 +72,7 @@ input#search.form-control{
 }
 
 .row-profile-main{
-  margin-top: 10px;
+  margin-top: 30px;
 }
 ul.list-of-suggested-users {
   padding-left: 80px;
@@ -184,7 +208,7 @@ ul {
 .row-main-user-home > div {
   padding-left: 5px;
   padding-right: 5px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .well-profile {
@@ -210,13 +234,13 @@ ul {
   background-color: #c0c0c0;
 	border: 2px solid #c0c0c0;*/
   height: 500px;
-  margin-left: -130px;
+  margin-left: -60px;
   margin-top: -20px;
 
 }
 
 .middle-banner-signup {
-	margin: 60px 180px;
+	margin: 50px 120px;
  }
 
 /*.julep{
@@ -237,11 +261,6 @@ input.form-control{
 	margin-left: 40px;
 	}
 
-.instagram{
-	position: relative;
-	margin-left: 800px;
-	margin-top: -22px;
-	}
 .btn-home{
 	padding: 5px;
 	background-color: white;
