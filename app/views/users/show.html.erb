@@ -27,7 +27,7 @@
 				<ul class="well-left-profile">
 					<li><strong>USER INFORMATION</strong></li><br>
 					<li>Location: <%= @user.location %></li>
-					<li>Bio: <%= @user.bio %></li>
+					<li>Position: <%= @user.bio %></li>
 					<li>Industry: <%= @user.industry %></li>
 					<li>Company: <%= @user.company %></li>
 							
@@ -60,10 +60,10 @@
 				<div class="well well-inside">
 				<ul class="text-center recipe-ul">			
 				<li><%= image_tag one_recipe.avatar.url(:medium), class: "img-thumbnail img-recipe" %></li>
-					<li><h4>Recipe Name: <%= link_to "#{one_recipe.name}", recipe_path(one_recipe) %></h4></li>
+					<li><h4>Recipe: <%= link_to "#{one_recipe.name}", recipe_path(one_recipe) %></h4></li>
 					
 					<li><strong>Ingredients:</strong> <%= one_recipe.description %></li>
-					<li><strong>Recipe Instructions:</strong> <%= one_recipe.instructions %></li><br>
+					<li><strong>Instructions:</strong> <%= one_recipe.instructions %></li><br>
 							<% if @user == current_user %>
 					<li><%= link_to "Edit", edit_recipe_path(one_recipe)  %></li>
 					<li><%= link_to "Delete", recipe_path(one_recipe), method: "delete" %></li>

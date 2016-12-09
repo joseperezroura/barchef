@@ -17,13 +17,19 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+.middle-banner-edit{
+  margin-top: 10px;
+}
+
 div.well.well-inside.well-inside-suggested-users {
     padding-top: 10px;
     padding-bottom: 0px;
     padding-right: 0px;
 }
 
-
+input#search.form-control{
+  padding-right: 30px;
+}
 .row-new-recipe{
   margin-left: 350px;
   margin-top: 40px;
