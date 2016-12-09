@@ -14,5 +14,6 @@ Rails.application.routes.draw do
  post '/unlike/:id', to: 'recipes#unlike'
 
  get '/search/:id', to: 'search#index'
+ get '/about/', to: 'about#about'
 
 end

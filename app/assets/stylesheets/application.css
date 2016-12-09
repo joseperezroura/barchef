@@ -17,6 +17,14 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+.img-thumbnail-about{
+  border: 1px solid black;
+}
+
+.row-about{
+  margin-top: 40px;
+}
+
 input#user_remember_me{
   width: 12px;
 }
@@ -186,6 +194,10 @@ ul.list-of-suggested-users {
 .well-inside {
   border-color: grey;
   padding-left: 0px;
+}
+
+.well-inside-about{
+  border-color: grey;
 }
 
 .well-inside-following{

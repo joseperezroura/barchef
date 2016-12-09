@@ -45,7 +45,7 @@
                 </div>
                 <div class="well well-inside text-center">
                 <ul class="well-left-profile">
-                	<li><strong>Liked Recipes</strong></li><br>
+                	<li><strong>LIKED RECIPES</strong></li><br>
                 	<% @liked_recipes.each do |one_liked_recipe| %>
 					<li> <%=  link_to "#{one_liked_recipe.name}", recipe_path(one_liked_recipe) %> </li>
 						
