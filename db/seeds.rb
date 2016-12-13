@@ -10,7 +10,7 @@ johnny = User.create!(email:"johnny@johnny.com", password: "whatever", password_
 jose = User.create!(email:"jose@jose.com", password: "whatever", password_confirmation: "whatever", first_name: "Jose", last_name: "Perez-Roura", bio: "Former Bartender", industry: "Over-Under", location: "Miami, FL")
 james = User.create!(email:"james@gmail.com", password: "whatever", password_confirmation: "whatever", first_name: "James", last_name: "Franco", bio: "Bartender in training at Broken Shaker. Living like its my last day brah...", industry: "Bar", location: "Los Angeles, CA")
 peyton = User.create!(email:"peyton@gmail.com", password: "whatever", password_confirmation: "whatever", first_name: "Peyton", last_name: "Sturgis", bio: "Pastry Chef", industry: "Hotel", location: "Denver, CO")
-molly = User.create!(email:"molly@gmail.com", password: "whatever", password_confirmation: "whatever", first_name: "Molly", last_name: "Smith", bio: "Cocktail Server at your mom's house.", industry: "Bar", location: "SanDiego, CA")
+molly = User.create!(email:"molly@gmail.com", password: "whatever", password_confirmation: "whatever", first_name: "Molly", last_name: "Smith", bio: "Pastry Chef", industry: "Restaurant", location: "SanDiego, CA")
 eli = User.create!(email:"eli@gmail.com", password: "whatever", password_confirmation: "whatever", first_name: "Eli", last_name: "Mann", bio: "Bartender for the New York Football Giants.", industry: "Hotel", location: "New York,NY")
 
 johnny.recipes.create!(name:"Old Fashioned", description:"2oz Bourbon Whiskey, barspoon of Simple Syrup and Bitters.", instructions:"Put all the ingredients in a mixing glass, add ice and stir for 40 seconds.  Serve over ice with a orange peel.")
