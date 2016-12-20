@@ -53,9 +53,9 @@ input#recipe_instructions{
 }
 
 div.well.well-inside.well-inside-suggested-users {
-    padding-top: 10px;
-    padding-bottom: 0px;
-    padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-right: 0px;
 }
 
 input#search.form-control{
@@ -137,12 +137,12 @@ ul.list-of-suggested-users {
 .img-recipe {
   border: 1px solid black;
 }
-.navbar-inverse .navbar-brand {
-  color: black;
+.navbar-top .navbar-brand {
+  color: white;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-  color: black;
+.navbar-top .navbar-nav>li>a {
+  color: white;
 }
 
 .list-of-suggested-users{
@@ -150,7 +150,8 @@ ul.list-of-suggested-users {
 }
 
 .navbar{
-  background-color: #038B47;
+  /*background-color: #038B47;*/
+  border: 0px;
 }
 
 .list-of-suggested-users li{
@@ -246,12 +247,6 @@ ul {
 .middle-banner-signup {
 	margin: 50px 120px;
  }
-
-/*.julep{
- 	position: relative;
-	margin-left: 30px;
-	margin-top: 0px;
- }*/
 	
 input.form-control{
  	padding-top: 0px;
@@ -270,6 +265,7 @@ input.form-control{
 	background-color: white;
 	border-color: black;
   margin-top: 5px;
+  border-radius: 0px;
 	}
 
 .lower-banner{
@@ -280,7 +276,8 @@ input.form-control{
 	margin-top: 0px;
 	}
 
-.home-img-stuff{position: relative;margin-top: -5px;    	
+.home-img-stuff{/*position: relative;*/
+  margin-top: -5px;    	
 	}
 
 .chef-title {
@@ -318,14 +315,23 @@ input.form-control{
   font-size: 15px;
     }   
 
-.middle-banner .col-md-12 {
+div.transbox {
 		text-align: center;
     width: 100%;
     height: 100%;
-    border: 1px solid blue;
+    border: 1px solid black;
     box-sizing: border-box;
-   
-	}   
+    opacity: 0.4;
+    background-color: rgba(0,0,0,0.9);
+    position: relative;
+    z-index: 1;
+    
+	} 
+.homebox{
+  position: relative;
+  z-index: 2;
+}
+
 
 .homepic {
   border-radius: 0;
