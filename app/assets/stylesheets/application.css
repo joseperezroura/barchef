@@ -320,18 +320,24 @@ input.form-control{
 div.transbox {
 		text-align: center;
     width: 100%;
-    height: 100%;
+    height: 300px;
     border: 1px solid black;
     box-sizing: border-box;
     opacity: 0.4;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.85);
     position: relative;
-    z-index: 1;
+    z-index: -1;
+    clear: both;
+    margin-top: 90px;
+    margin-right: 150px;
+    margin-left: 150px;
     
 	} 
 .homebox{
   position: relative;
-  z-index: 2;
+  top: 15em;
+  margin: 20px 177px;
+
 }
 
 
@@ -348,6 +354,13 @@ div.transbox {
   background-image: url("/assets/blueberries.jpg");
   color: white;
   background-size: cover;
+}
+
+h3{
+  position: relative;
+  z-index: 1000;
+
+
 }
 
 
