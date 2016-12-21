@@ -319,8 +319,8 @@ input.form-control{
 
 div.transbox {
 		text-align: center;
-    width: 100%;
-    height: 300px;
+    width: 75%;
+    height: 200px;
     border: 1px solid black;
     box-sizing: border-box;
     opacity: 0.4;
@@ -328,15 +328,17 @@ div.transbox {
     position: relative;
     z-index: -1;
     clear: both;
-    margin-top: 90px;
+    margin-top: 10px;
     margin-right: 150px;
     margin-left: 150px;
     
 	} 
 .homebox{
   position: relative;
-  top: 15em;
+  top: 9em;
   margin: 20px 177px;
+  line-height: 30px;
+  font-size: 20px;
 
 }
 
