@@ -17,6 +17,15 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+.h1about{
+  text-shadow: 2px 2px #000000;
+}
+
+.aboutfont{
+  text-shadow: 2px 2px #000000;
+  font-size: 20px;
+}
+
 .img-thumbnail-about{
   border: 1px solid grey;
 }
