@@ -366,6 +366,7 @@ div.transbox {
   background-image: url("/assets/blueberries.jpg");
   color: white;
   background-size: cover;
+  opacity: 0.4;
 }
 
 h3{
