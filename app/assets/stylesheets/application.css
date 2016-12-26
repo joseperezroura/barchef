@@ -17,8 +17,13 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+a {
+   text-decoration: none;
+} 
+
 .h1about{
   text-shadow: 2px 2px #000000;
+  margin-top: 70px;
 }
 
 .aboutfont{
@@ -161,9 +166,13 @@ ul.list-of-suggested-users {
 }
 
 .navbar{
-  /*background-color: #038B47;*/
+  background-color: black;
   border: 0px;
   text-shadow: 1px 1px #000000;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
 }
 
 .list-of-suggested-users li{
@@ -366,12 +375,12 @@ div.transbox {
   background-image: url("/assets/blueberries.jpg");
   color: white;
   background-size: cover;
-  opacity: 0.4;
+ /* opacity: 0.4;*/
 }
 
 h3{
   position: relative;
-  z-index: 1000;
+  z-index: 50;
 
 
 }
