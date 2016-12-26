@@ -17,6 +17,16 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+.sign-up-h1{
+  margin-top: 80px;
+  margin-left: 120px;
+}
+
+.sign-up-img{
+  height: 500px;
+  width: auto;
+}
+
 a {
    text-decoration: none;
 } 
@@ -266,7 +276,8 @@ ul {
 
 
 .middle-banner-signup {
-	margin: 50px 120px;
+	/*margin: 60px 80px;*/
+  margin-left: 120px;
  }
 	
 input.form-control{
