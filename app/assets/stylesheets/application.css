@@ -27,9 +27,11 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
   width: auto;
 }
 
-a {
-   text-decoration: none;
-} 
+ul.nav > li > a:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  border-style: none;
+}
 
 .h1about{
   text-shadow: 2px 2px #000000;
