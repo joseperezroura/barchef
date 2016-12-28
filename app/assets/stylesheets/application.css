@@ -102,14 +102,13 @@ input#search.form-control{
 
 .well-main-profile{
   background-color: #808080;
+
 }
 .sign-up-form-block{
   margin-right: 90px;
 }
 
-.row-profile-main{
-  margin-top: 70px;
-}
+
 ul.list-of-suggested-users {
   padding-left: 80px;
   padding-top: 10px;
@@ -144,13 +143,21 @@ ul.list-of-suggested-users {
 
 .well-main-profile-2 {
   background-color: #808080;
+
+}
+
+.well-recipe{
+  border-radius: 0px;
+  border-color: black;
+  margin-top: 80px;
+  padding-bottom: 0px;
+  background-color: #808080;
 }
 
 .well-main-profile {
-  /*height: 700px;*/
   border-radius: 0px;
   border-color: black;
-  margin-top: 15px;
+  margin-top: 20px;
   padding-bottom: 0px;
 }
 
@@ -262,6 +269,9 @@ ul {
   height: 700px;
   background-color: #f2f2f2;
   border-radius: 0px;
+}
+.row-profile-main{
+  margin-top: 50px;
 }
 
 .well-suggested-users{
