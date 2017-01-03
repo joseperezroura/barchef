@@ -17,6 +17,12 @@
 /*.img-raised {
 box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
+/*body{
+  font-family: 'Cuprum', sans-serif;
+}*/
+h2{
+  font-family: 'Cuprum', sans-serif;
+}
 .sign-up-h1{
   margin-top: 80px;
   margin-left: 120px;
@@ -36,6 +42,11 @@ ul.nav > li > a:hover {
 .h1about{
   text-shadow: 2px 2px #000000;
   margin-top: 70px;
+  font-family: 'Cuprum', sans-serif;
+}
+
+.h1, h1{
+  font-size: 45px;
 }
 
 .aboutfont{
@@ -174,6 +185,7 @@ ul.list-of-suggested-users {
 }
 .navbar-top .navbar-brand {
   color: white;
+  font-size: 20px;
 }
 
 .navbar-top .navbar-nav>li>a {
@@ -192,6 +204,8 @@ ul.list-of-suggested-users {
   left: 0px;
   right: 0px;
   z-index: 100;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
 }
 
 .list-of-suggested-users li{
@@ -240,6 +254,7 @@ ul.list-of-suggested-users {
 
 .well-inside-about{
   border-color: grey;
+
 }
 
 .well-inside-following{
@@ -331,8 +346,9 @@ input.form-control{
   position: relative;
   font-size: 44px;
   right: 320px;
-  top: 150px;
+  top: 170px;
   text-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
+  font-family: 'Cuprum', sans-serif;
     }
 
 .footer-text {
@@ -384,6 +400,7 @@ div.transbox {
   margin: 20px 177px;
   line-height: 30px;
   font-size: 20px;
+  
 
 }
 
