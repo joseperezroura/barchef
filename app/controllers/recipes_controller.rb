@@ -66,7 +66,6 @@ end
 
 def like
 
-	
 	recipe_id = params[:id].to_i
 	likee = Recipe.find(recipe_id)
 	current_user.like!(likee)
