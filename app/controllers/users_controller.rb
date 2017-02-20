@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
 def show
+	
 	@user = User.find(params[:id])
 	@recipes = @user.recipes
 	@followees = @user.followees(User)
@@ -25,6 +26,7 @@ def unfollow
 	followee = User.find(params[:id])
 	follower.unfollow!(followee)
 	redirect_to(:back)
+	
 end
 
 

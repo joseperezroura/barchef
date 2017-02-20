@@ -346,7 +346,7 @@ input.form-control{
   position: relative;
   font-size: 44px;
   right: 320px;
-  top: 170px;
+  top: 179px;
   text-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
   font-family: 'Cuprum', sans-serif;
     }
@@ -380,7 +380,7 @@ input.form-control{
 
 div.transbox {
 		text-align: center;
-    width: 75%;
+    width: 80%;
     height: 200px;
     border: 1px solid black;
     box-sizing: border-box;

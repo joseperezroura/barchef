@@ -7,12 +7,9 @@ def new
 end
 
 def create
+	
 	@recipe = current_user.recipes.new(recipe_params)
-
-	
-	
 	if @recipe.save
-
 		redirect_to user_path(current_user)
 	else
 		flash[:message] = "Sorry this name is already taken!"
@@ -24,7 +21,6 @@ def edit
 
 	recipe_id = params[:id]
 	@recipe = current_user.recipes.find(recipe_id)
-	
 	render :edit
 
 end
@@ -46,8 +42,6 @@ def show
 
 	recipe_id = params[:id].to_i
 	@recipe = Recipe.find(recipe_id)
-		
-
 	render :show
 
 end
