@@ -20,6 +20,16 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 /*body{
   font-family: 'Cuprum', sans-serif;
 }*/
+.barlogo{
+  height: 40px;
+  width: auto;
+}
+.barlogo2{
+  height: 80px;
+  width: auto;
+  margin-top: 100px;
+}
+
 h2{
   font-family: 'Cuprum', sans-serif;
 }
