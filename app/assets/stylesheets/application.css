@@ -207,7 +207,8 @@ ul.list-of-suggested-users {
 }
 
 .navbar{
-  background-color: #24292e;
+  /*background-color: #24292e;*/
+  background-color: black;
   border: 0px;
   text-shadow: 1px 1px #000000;
   position: fixed;
