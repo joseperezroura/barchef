@@ -22,4 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-Change Project to full js / MEAN stack.
+
+*Change Project to full js / MEAN stack or reorganize rails layout.
+
+*Create new design with UX UI research.
