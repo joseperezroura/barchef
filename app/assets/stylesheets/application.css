@@ -22,7 +22,8 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }*/
 .barlogo{
   height: 40px;
-  /*width: auto;*/
+  width: auto;
+  margin-top: 7px;
 }
 .barlogo2{
   height: 80px;
