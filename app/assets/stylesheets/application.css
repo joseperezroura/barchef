@@ -31,7 +31,7 @@ box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
 }
 
 h2{
-  font-family: 'Cuprum', sans-serif;
+  /*font-family: 'Cuprum', sans-serif;*/
 }
 .sign-up-h1{
   margin-top: 80px;
@@ -52,7 +52,7 @@ ul.nav > li > a:hover {
 .h1about{
   text-shadow: 2px 2px #000000;
   margin-top: 70px;
-  font-family: 'Cuprum', sans-serif;
+  /*font-family: 'Cuprum', sans-serif;*/
 }
 
 .h1, h1{
@@ -187,7 +187,7 @@ ul.list-of-suggested-users {
 }
 
 .form-control {
-  border: 1px solid black; 
+  border: 1px solid black;
 }
 
 .img-recipe {
@@ -215,12 +215,12 @@ ul.list-of-suggested-users {
   left: 0px;
   right: 0px;
   z-index: 100;
-  font-family: 'Cuprum', sans-serif;
+  /*font-family: 'Cuprum', sans-serif;*/
   font-size: 18px;
 }
 
 .list-of-suggested-users li{
-  display: inline-table; 
+  display: inline-table;
   width: 49%;
 }
 
@@ -242,7 +242,7 @@ ul.list-of-suggested-users {
 }
 
 .img-main-home-user{
-    
+
   display: inline-block;
   vertical-align: middle;
 
@@ -320,14 +320,14 @@ ul {
   margin-right: 140px;
   margin-top: 90px;
  }
-	
+
 input.form-control{
  	padding-top: 0px;
  	padding-bottom: 0px;
  	padding-right: 60px;
  	padding-left: 10px;
  	}
-	
+
 .form-search{
 	margin-top: 9px;
 	margin-left: 40px;
@@ -344,13 +344,13 @@ input.form-control{
 .lower-banner{
  	margin-top: 40px;
  	}
-    
+
 .sign-up-form{
 	margin-top: 0px;
 	}
 
 .home-img-stuff{/*position: relative;*/
-  margin-top: -5px;    	
+  margin-top: -5px;
 	}
 
 .chef-title {
@@ -359,7 +359,7 @@ input.form-control{
   right: 320px;
   top: 179px;
   text-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
-  font-family: 'Cuprum', sans-serif;
+  /*font-family: 'Cuprum', sans-serif;*/
     }
 
 .footer-text {
@@ -371,7 +371,7 @@ input.form-control{
 .btn-primary {
   background-color: #8dd3d1;
   color: black;
-  border-color: black;	
+  border-color: black;
     }
 
 .img-home{
@@ -385,9 +385,9 @@ input.form-control{
     }
 
 .middle-banner {
-  margin: 200px 200px;	
+  margin: 200px 200px;
   font-size: 15px;
-    }   
+    }
 
 div.transbox {
 		text-align: center;
@@ -403,15 +403,14 @@ div.transbox {
     margin-top: 10px;
     margin-right: 150px;
     margin-left: 150px;
-    
-	} 
+	}
 .homebox{
   position: relative;
   top: 9em;
   margin: 20px 177px;
   line-height: 30px;
   font-size: 20px;
-  
+
 
 }
 
@@ -422,7 +421,7 @@ div.transbox {
   background-image: url("/assets/newchef1.jpg");
   color: white;
   background-size: cover;
-    }  
+    }
 .aboutpic {
   border-radius: 0;
   height: 750px;
@@ -438,6 +437,3 @@ h3{
 
 
 }
-
-
-
