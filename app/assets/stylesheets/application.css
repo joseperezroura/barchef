@@ -406,7 +406,7 @@ div.transbox {
     margin-left: 150px;
 	}
 .homebox{
-  position: relative;
+  /*position: relative;*/
   top: 9em;
   margin: 20px 177px;
   line-height: 30px;
