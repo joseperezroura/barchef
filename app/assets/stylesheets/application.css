@@ -337,9 +337,13 @@ input.form-control{
 .btn-home{
 	padding: 5px;
 	background-color: white;
-	border-color: black;
+	border-color: white;
   margin-top: 5px;
-  border-radius: 0px;
+  border-radius: 10px;
+  width: 90px;
+  height: 30px;
+  /*color: white;*/
+  /*text-shadow: 2px 2px #000000;*/
 	}
 
 .lower-banner{
@@ -424,6 +428,7 @@ div.transbox {
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: black;
     }
 .aboutpic {
   border-radius: 0;
