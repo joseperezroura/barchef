@@ -422,6 +422,7 @@ div.transbox {
   background-image: url("/assets/newchef1.jpg");
   color: white;
   background-size: cover;
+  background-repeat: no-repeat;
     }
 .aboutpic {
   border-radius: 0;
@@ -429,6 +430,7 @@ div.transbox {
   background-image: url("/assets/blueberries.jpg");
   color: white;
   background-size: cover;
+  background-repeat: no-repeat;
  /* opacity: 0.4;*/
 }
 
