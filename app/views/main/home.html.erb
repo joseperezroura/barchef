@@ -1,36 +1,32 @@
-<body class="homepic">
-    <div class="container text-center">
-        <!-- <h1 class="chef-title">BARCHEF</h1>  -->
-        <img src="assets/barlogo1.svg" class="barlogo2">
-
-    </div>
-
+<body>
+  <div class="container">
     <div class="row">
-        <div class="col-md-12">
-
-            <div class="row homebox">
-                BARCHEF is a social media platform made exclusively for the hospitality industry. Chefs, bartenders &amp kitchen enthusiasts can share recipes amongst themselves. Sign-up today &amp create your own profile to start improving your skills in the
-                kitchen or behind the bar!
-
-                <!-- BARCHEF is the number one resource for Chefs and bartenders to share recipes with their peers! Learn about the latest trends in the restaurant/bar industry. Sign-up and create a profile to start improving your recipes TODAY! -->
-
-            </div>
-            <div class="row">
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-4">
-              <center><%= link_to "SIGN-UP", new_user_registration_path, class: "btn btn-default btn-home" %></center>
-            </div>
-
-
-                <div class="col-md-4">
-                </div>
-
-
-            </div>
-            <!-- <div class="transbox"></div> -->
-
+      <div class="col-lg-6">
+        <div class="barformat">
+          <img class="homelogo" src="assets/bcLogoFinal10.svg">
         </div>
-    </div>
+      </div>
+      <!-- <div class="col-lg-4">
+        <div class="barformat">
+          <div>
+            <img class="chefpic img-thumbnail" src="assets/newchef1.jpg">
+          </div>
+        </div>
+      </div> -->
 
+      <!-- <div class="transbox"></div> -->
+      <div class="col-lg-6">
+        <div class="barformat">
+          <div class="">
+            BARCHEF is a social media platform made exclusively for the hospitality industry. Chefs, bartenders &amp kitchen enthusiasts can share recipes amongst themselves. Sign-up today &amp create your own profile to start improving your skills in the
+            kitchen or behind the bar!
+          </div>
+          <div class="">
+            <center><%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-default" %></center>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>

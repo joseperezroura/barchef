@@ -13,74 +13,86 @@
  *= require_tree .
  *= require_self
  */
-
-/*.img-raised {
-box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
-}*/
-/*body{
-  font-family: 'Cuprum', sans-serif;
-}*/
-.barlogo{
+ body{
+   background-color: white;
+ }
+.chefpic{
+  width: 900px;
+  height: auto;
+  border-color: #00A651;
+  border-width: 3px;
+  background-color: black;
+  border-radius: 20px;
+}
+.homelogo{
+  height: 360px;
+  width: auto;
+}
+.hometext{
+  margin-top: 10px;
+}
+.barlogo {
   height: 38px;
   width: auto;
-  margin-top: 7px;
-}
-.barlogo2{
-  height: 80px;
-  width: auto;
-  margin-top: 100px;
+  margin-top: 5px;
 }
 
-h2{
+.barformat {
+  margin-top: 80px;
+}
+
+h2 {
   font-family: 'Cuprum', sans-serif;
 }
-.sign-up-h1{
+
+.sign-up-h1 {
   margin-top: 80px;
   margin-left: 120px;
 }
 
-.sign-up-img{
+.sign-up-img {
   height: 500px;
   width: auto;
 }
 
-ul.nav > li > a:hover {
+ul.nav>li>a:hover {
   background-color: #000000;
   color: #FFFFFF;
   border-style: none;
 }
 
-.h1about{
+.h1about {
   text-shadow: 2px 2px #000000;
   margin-top: 70px;
   /*font-family: 'Cuprum', sans-serif;*/
 }
 
-.h1, h1{
+.h1, h1 {
   font-size: 45px;
 }
 
-.aboutfont{
+.aboutfont {
   text-shadow: 2px 2px 4px #000000;
   font-size: 20px;
 }
 
-.img-thumbnail-about{
+.img-thumbnail-about {
   border: 1px solid grey;
 }
 
-.row-about{
+.row-about {
   margin-top: 40px;
 }
 
-input#user_remember_me{
+input#user_remember_me {
   width: 12px;
 }
-input#user_avatar{
+
+input#user_avatar {
   margin-left: 30px;
 }
 
-div.field{
+div.field {
   margin-bottom: 25px;
 }
 
@@ -88,14 +100,15 @@ input {
   width: 200px;
 }
 
-input#recipe_description{
+input#recipe_description {
   width: 300px;
 }
-input#recipe_instructions{
-  width: 300px;
-  }
 
-.middle-banner-edit{
+input#recipe_instructions {
+  width: 300px;
+}
+
+.middle-banner-edit {
   margin-top: 10px;
   margin-left: 40px;
 }
@@ -106,30 +119,29 @@ div.well.well-inside.well-inside-suggested-users {
   padding-right: 0px;
 }
 
-
-input#search.form-control{
+input#search.form-control {
   padding-right: 30px;
   width: 300px;
   /*background-color: #508A4C;*/
 }
-.row-new-recipe{
+
+.row-new-recipe {
   margin-left: 350px;
   margin-top: 40px;
 }
 
-.row-edit-recipe{
+.row-edit-recipe {
   margin-left: 350px;
   margin-top: 40px;
 }
 
-.well-main-profile{
+.well-main-profile {
   background-color: #808080;
-
 }
-.sign-up-form-block{
+
+.sign-up-form-block {
   margin-right: 90px;
 }
-
 
 ul.list-of-suggested-users {
   padding-left: 80px;
@@ -146,11 +158,12 @@ ul.list-of-suggested-users {
   background-color: #C3E0E2;
 }
 
-.home-blurb{
+.home-blurb {
   color: black;
   font-size: 15px;
   margin-bottom: 30px;
 }
+
 .recipe-ul {
   padding-left: 0px;
 }
@@ -165,10 +178,9 @@ ul.list-of-suggested-users {
 
 .well-main-profile-2 {
   background-color: #808080;
-
 }
 
-.well-recipe{
+.well-recipe {
   border-radius: 0px;
   border-color: black;
   margin-top: 80px;
@@ -194,6 +206,7 @@ ul.list-of-suggested-users {
 .img-recipe {
   border: 1px solid black;
 }
+
 .navbar-top .navbar-brand {
   color: white;
   font-size: 14px;
@@ -203,11 +216,11 @@ ul.list-of-suggested-users {
   color: white;
 }
 
-.list-of-suggested-users{
+.list-of-suggested-users {
   padding-left: 0px;
 }
 
-.navbar{
+.navbar {
   /*background-color: #24292e;*/
   background-color: black;
   border: 0px;
@@ -220,73 +233,70 @@ ul.list-of-suggested-users {
   font-size: 15px;
 }
 
-.list-of-suggested-users li{
+.list-of-suggested-users li {
   display: inline-table;
   width: 49%;
 }
 
-.sponsor-box{
+.sponsor-box {
   margin-top: 40px;
   border: 2px solid #c0c0c0;
-
 }
 
-.user-home-profile-info{
+.user-home-profile-info {
   margin-top: 30px;
 }
 
-.user-home-profile-links{
+.user-home-profile-links {
   display: inline-block;
   padding: 0;
   margin: 0;
   vertical-align: middle;
 }
 
-.img-main-home-user{
-
+.img-main-home-user {
   display: inline-block;
   vertical-align: middle;
-
 }
 
-.li-links-user-home{
+.li-links-user-home {
   position: relative;
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
-.text-suggestions-h1{
+.text-suggestions-h1 {
   margin-bottom: 40px;
   color: white;
 }
+
 .well-inside {
   border-color: grey;
   padding-left: 0px;
 }
 
-.well-inside-about{
+.well-inside-about {
   border-color: grey;
-
 }
 
-.well-inside-following{
+.well-inside-following {
   padding: 10px;
-
 }
-.well-outer-sign{
+
+.well-outer-sign {
   border-color: black;
 }
 
 ul {
   list-style-type: none;
-
 }
-.img-user-thumbnail{
+
+.img-user-thumbnail {
   height: 55px;
   width: auto;
 }
 
-.row-main-user-home > div {
+.row-main-user-home>div {
   padding-left: 5px;
   padding-right: 5px;
   margin-top: 80px;
@@ -297,11 +307,12 @@ ul {
   background-color: #f2f2f2;
   border-radius: 0px;
 }
-.row-profile-main{
+
+.row-profile-main {
   margin-top: 50px;
 }
 
-.well-suggested-users{
+.well-suggested-users {
   padding-left: 35px;
   padding-right: 35px;
   padding-bottom: 0px;
@@ -309,54 +320,53 @@ ul {
   border-radius: 0px;
 }
 
-.field{
+.field {
   margin: 10px 0px;
 }
 
-
-
 .middle-banner-signup {
-	/*margin: 60px 80px;*/
+  /*margin: 60px 80px;*/
   margin-left: 200px;
   margin-right: 140px;
   margin-top: 90px;
- }
+}
 
-input.form-control{
- 	padding-top: 0px;
- 	padding-bottom: 0px;
- 	padding-right: 60px;
- 	padding-left: 10px;
- 	}
+input.form-control {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 60px;
+  padding-left: 10px;
+}
 
-.form-search{
-	margin-top: 9px;
-	margin-left: 40px;
-	}
+.form-search {
+  margin-top: 9px;
+  margin-left: 40px;
+}
 
-.btn-home{
-	padding: 5px;
-	background-color: white;
-	border-color: white;
+.btn-home {
+  padding: 5px;
+  background-color: white;
+  /*border-color: white;*/
   margin-top: 5px;
   border-radius: 10px;
   width: 90px;
   height: 30px;
   /*color: white;*/
   /*text-shadow: 2px 2px #000000;*/
-	}
+}
 
-.lower-banner{
- 	margin-top: 40px;
- 	}
+.lower-banner {
+  margin-top: 40px;
+}
 
-.sign-up-form{
-	margin-top: 0px;
-	}
+.sign-up-form {
+  margin-top: 0px;
+}
 
-.home-img-stuff{/*position: relative;*/
+.home-img-stuff {
+  /*position: relative;*/
   margin-top: -5px;
-	}
+}
 
 .chef-title {
   position: relative;
@@ -365,84 +375,80 @@ input.form-control{
   top: 179px;
   text-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
   /*font-family: 'Cuprum', sans-serif;*/
-    }
+}
 
 .footer-text {
   position: relative;
   top: 8px;
   margin-left: 30px;
-    }
+}
 
 .btn-primary {
   background-color: #8dd3d1;
   color: black;
   border-color: black;
-    }
+}
 
-.img-home{
-	margin-top: 15px;
+.img-home {
+  margin-top: 15px;
   box-shadow: 4px 4px 3px rgba(50, 50, 50, 50);
-	  }
+}
 
 .menu_bar {
   margin-bottom: 0;
   border-radius: 0;
-    }
+}
 
 .middle-banner {
   margin: 200px 200px;
   font-size: 15px;
-    }
+}
 
 div.transbox {
-		text-align: center;
-    width: 80%;
-    height: 200px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    opacity: 0.4;
-    background-color: rgba(0,0,0,0.85);
-    position: relative;
-    z-index: -1;
-    clear: both;
-    margin-top: 10px;
-    margin-right: 150px;
-    margin-left: 150px;
-	}
-.homebox{
+  text-align: center;
+  width: 80%;
+  height: 200px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: relative;
+  z-index: -1;
+  clear: both;
+  margin-top: 10px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.homebox {
   /*position: relative;*/
   top: 9em;
   margin: 20px 177px;
   line-height: 30px;
   font-size: 20px;
-  text-shadow: 2px 2px #000000;
-
-
+  /*text-shadow: 2px 2px #000000;*/
 }
-
 
 .homepic {
   border-radius: 0;
   height: 750px;
-  background-image: url("/assets/newchef1.jpg");
-  color: white;
+  /*background-image: url("/assets/screen-bg.svg");*/
+  /*color: white;*/
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: black;
-    }
+}
+
 .aboutpic {
   border-radius: 0;
   height: 750px;
-  background-image: url("/assets/blueberries.jpg");
+  /*background-image: url("/assets/blueberries.jpg");*/
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
- /* opacity: 0.4;*/
+  /* opacity: 0.4;*/
 }
 
-h3{
+h3 {
   position: relative;
   z-index: 50;
-
-
 }
