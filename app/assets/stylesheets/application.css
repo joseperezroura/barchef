@@ -196,7 +196,7 @@ ul.list-of-suggested-users {
 }
 .navbar-top .navbar-brand {
   color: white;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .navbar-top .navbar-nav>li>a {
@@ -217,7 +217,7 @@ ul.list-of-suggested-users {
   right: 0px;
   z-index: 100;
   /*font-family: 'Cuprum', sans-serif;*/
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .list-of-suggested-users li{
