@@ -25,7 +25,7 @@
   border-radius: 20px;
 }
 .homelogo{
-  height: 360px;
+  height: 180px;
   width: auto;
 }
 .hometext{
@@ -35,6 +35,12 @@
   height: 38px;
   width: auto;
   margin-top: 5px;
+}
+.barlogo2{
+  height: 35px;
+  width: auto;
+  margin-top: 5px;
+  margin-left: 3px
 }
 
 .barformat {
@@ -432,7 +438,7 @@ div.transbox {
 .homepic {
   border-radius: 0;
   height: 750px;
-  /*background-image: url("/assets/screen-bg.svg");*/
+  background-image: url("/assets/screen-bg.svg");
   /*color: white;*/
   background-size: cover;
   background-repeat: no-repeat;
